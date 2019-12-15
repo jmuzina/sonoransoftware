@@ -1,0 +1,70 @@
+@font-face{
+    font-family: glober;
+    src: url('../fonts/Glober/Glober\ Bold\ Free.otf');
+}
+
+.products{
+    display:flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.welcome-container{
+    display:flex;
+    background-color: #cbcbcb;
+    flex-flow: column wrap;
+    padding-top: 120px;
+}
+
+.welcome-top-headers-container{
+    display:flex;
+    margin-top: auto;
+    flex-flow: column wrap;
+}
+
+.welcome-header{
+    color: black;
+    font-family: "glober", "Geneva", "Tahoma", "sans-serif";
+    font-size: 5vmin;
+    text-align: center;
+}
+
+.welcome-subheader{
+    color: #0071ce;
+    font-family: "glober", "Geneva", "Tahoma", "sans-serif";
+    font-size: 4vmin;
+    text-align: center;
+}
+
+.welcome-bottom-headers-container{
+    display:flex;
+    margin-bottom: auto;
+    flex-flow: column wrap;
+}
+
+.welcome-subsubheader{
+    color: black;
+    font-family: "glober", "Geneva", "Tahoma", "sans-serif";
+    font-size: 2vmin;
+    padding-bottom: 1%;
+    text-align: center;
+}
+
+.product-image img {
+    max-width: 100%;
+    padding: 2%;
+    flex-shrink: 1;
+}
+
+.team-cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.team-member-info {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}

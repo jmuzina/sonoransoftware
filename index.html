@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required -->
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="assets/css/aos.css">
+        <link rel='stylesheet' href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/flexboxes.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/f197f2acef.js" crossorigin="anonymous"></script>
+        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Sonoran Software Systems</title>        
+        <!-- Open Graph / Social -->
+        <meta property="og:site_name" content="Sonoran Software Systems LLC">
+        <meta property="og:title" content="Sonoran Software Systems">
+        <meta property="og:description" content="Specializing in cross-platform application development, Sonoran Software Systems is devoted to outpacing competitors with more affordable, efficient and modern software solutions.">
+        <meta property="og:image" content="https://i.imgur.com/g3XXMi2.png">
+        <meta property="og:url" content="https://sonoran.software/">
+        <meta name="theme-color" content="#2d71b4">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #e7e7e7;">
+                    <div class="container">
+                        <a class="navbar-brand logo" href="./" style="margin-right:7%; margin-left:2%;">
+                            <img src="assets/images/logo2.png" alt=""> 
+                        </a>
+                        <button id="nav-btn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse nav-custom-links" id="navbar" style="background-color:#e7e7e7; border-radius: 12px; padding: 5px;">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./about">About</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Products
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                      <a class="dropdown-item" href="./products/sonorancad">SonoranCAD</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="modal" data-target="#contactModal" style="cursor:pointer;">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="contactModal modal-dialog" role="document">
+              <div class="modal-content" style="background-color:#e7e7e7;">
+                <form action="contact.php" method="post">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="contact-form">
+                            <div class="container">
+                                <div class="form-row">
+                                    <div class="col-md-5">
+                                        <label class="contact-form-label">
+                                            <input type="text" name="name" class="contact-form-input form-name form-control" placeholder="Name" required style="border-radius:6px;">
+                                        </label>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <label class="contact-form-label">
+                                            <input type="email" name="from" class="contact-form-input form-email form-control" placeholder="Email" required style="border-radius:6px;">
+                                        </label> 
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <label class="contact-form-label">
+                                        <input type="text" name="subject" class="contact-form-input form-subject form-control" placeholder="Subject" required style="border-radius:6px;">
+                                    </label>
+                                </div>
+                                <div class="form-row">
+                                    <label class="contact-form-label">
+                                        <textarea name="message" class="contact-form-input form-message form-control" style="height: 150px;" placeholder="Message" required style="border-radius:6px;"></textarea>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Send</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        <div class="main">
+            <div class="welcome-container">
+                <div class = "welcome-top-headers-container">
+                    <h1 class="welcome-header">Sonoran Software Systems, LLC.</h1>
+                    <h2 class="welcome-subheader">Software, simplified.</h2>
+                </div>
+                <div class="products">
+                    <div class="product-image">
+                        <img src="assets/images/sonorancad_phone_4.png" alt="">
+                    </div>
+                    <div class="product-image">
+                        <img src="assets/images/sonorancad_desktop_1.png" alt="">
+                    </div>
+                    <div class="product-image">
+                        <img src="assets/images/sonorancad_tablet_1.png" alt="">
+                    </div>
+                </div>
+                <div class = "welcome-bottom-headers-container">
+                    <span class="welcome-subsubheader">Specializing in cross-platform application development, Sonoran Software Systems is devoted to outpacing competitors with more affordable, efficient and modern software solutions.</span>
+                </div>
+            </div> 
+            </div>
+            <div style = "background-color: #e7e7e7; padding-bottom: 2%;">
+                    <div class = "container">
+                        <div class="row">
+                            <div class = "col-md-6 align-self-center">
+                                <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" class="company-info-image">
+                                    <img src="./assets/images/logo2.png" height = "auto" alt="">
+                                </div>
+                            </div>
+                            <div class = "col-md-6">
+                                <div data-aos="fade-left" data-aos-anchor-placement="top-bottom" class="company-info-text-2", style = "padding-top: 2%;">
+                                    <p class="about-headings">
+                                        Our Technology
+                                    </p>
+                                    <p class="about-text">
+                                        We use the latest development tools available to ensure a fully responsive, efficient and innovative design. Our highly optimized deployments ensure high availability, low overhead and an immersive user experience.
+                                    </p>
+                                    <p class="about-headings">
+                                        Our Team
+                                    </p>
+                                    <p class="about-text">
+                                        Our team of dedicated professionals takes a personalized approach to every project. We take pride in ensuring quality, innovative solutions and an exceptional customer experience.
+                                    </p>
+                                    <a href="./about"><button class="button"><span>Learn more</span></button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <footer style = "background-color: #191919; position: relative; height: auto;">    
+            <div class = "container">
+                <div class = "row">
+                    <div class = "col-md-6 left-footer-links">
+                        
+                            <h1 style = "color:white;">
+                                Connect With Us
+                            </h1>
+                            <ul>
+                                <li><a href="https://discord.gg/CBzQWC2"><span class="icon"><i class="fab fa-discord"></i></span> Discord</a></li>
+                                <li><a href="https://www.linkedin.com/company/sonoran-software-systems/"><span class="icon"><i class="fab fa-linkedin-in"></i></span> LinkedIn</a></li>
+                                <li><a href="mailto:info@sonoransoftware.com"><span class="icon"><i class="fas fa-envelope"></i></span> Email</a></li>
+                            </ul>
+                    </div>
+                    <div class = "col-md-6 right-footer-links">
+                        <h1 style = "color:white;">
+                            Helpful Links
+                        </h1>
+                        <ul>
+                            <li><a href="./about">About Us</a></li>
+                            <li><a href="./contact">Contact Us</a></li>
+                            <li class="footer-submenu">Products</li>
+                                <ul>
+                                    <li><a href="./products/sonorancad"><small>SonoranCAD</small></a></li>
+                                </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copy">
+                <div class="content">
+                    <div class="footer-copyright">
+                        <p>Copyright © 2019 Sonoran Software Systems, LLC</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="assets/javascript/script.js"></script>
+        <script src="assets/javascript/aos.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        <script>AOS.init({duration: "2000"});</script>
+    </body>
+</html>
