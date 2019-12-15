@@ -44,7 +44,7 @@ header {
 
 .container {
     width: 100%;
-    margin: auto;
+    /*margin: auto;*/
     padding: 0 15px;
 }
 
@@ -642,7 +642,6 @@ header {
 
 .team-member-main {
     width: 100%;
-    height: 375px;
     background-color: #e7e7e7;
     display: flex;
     text-align: center;
@@ -747,13 +746,15 @@ textarea {
     display: flex;
     color: #e7e7e7;
     text-align: center;
-    margin-top: 300px;
     padding-top: 1%;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    justify-content: center;
 }
 
 .team-member-treeee {
     width: 100%;
-    height: 290px;
+    /*height: 290px;*/
     background-color: #e7e7e7;
     display: flex;
     text-align: center;
@@ -761,19 +762,112 @@ textarea {
 
 .team-member-image {
     height:auto;
+    display:flex;
+    flex-flow:column nowrap;
+    align-self: flex-start;
 }
 
 .team-member-image img {
-    max-width: 60%;
+    max-width: 100%;
     padding: 3px;
     border-radius: 15px;
     margin-top: 10px;
     height: auto;
-
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.team-member-text-main {
-    padding-top: 90px;
+.profile_details{
+    padding-top:80px;
+}
+
+.passion_experience{
+    padding-top:0px;
+}
+
+@media screen and (min-width:768px){
+    .passion_experience{
+        padding-top:50px;
+    }
+}
+
+@media screen and (max-width:478px) {
+    .profile_details{
+        padding-top:0px;
+    }
+}
+
+.profile_text_container{
+    display:flex;
+    justify-content: flex-end;
+    flex-flow: row wrap;
+}
+
+.profile_text{
+    display:flex;
+    flex-flow: column wrap;
+    align-self:center;
+    text-align: right;
+}
+
+.profile_pic_container{
+    display:flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+}
+
+.profile_pic{
+    display:flex;
+    flex-flow: column wrap;
+    align-self: center;
+}
+
+.quote_container{
+    display:flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+}
+
+.quote{
+    display:flex;
+    flex-flow: column wrap;
+    align-self:center;
+    text-align: left;
+    font-style: italic;
+    font-family: "glober", "Geneva", "Tahoma", "sans-serif";
+}
+
+@media screen and (max-width:767px){
+    .profile_text_container{
+        justify-content: center;
+    }
+    .profile_text{
+        text-align:center;
+    }
+    .quote_text{
+        text-align:center;
+    }
+    .profile_pic img{
+        margin:auto;
+    }
+    .quote{
+        padding-top:20px;
+    }
+}
+
+.team-member-text-main h1 {
+    display:flex;
+}
+
+@media screen and (max-width: 478px) {
+    .team-member-text-main{
+        padding-top: 80px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .team-member-text-main{
+        padding-top: 80px;
+    }
 }
 
 .team-member-text-main h1 {
@@ -814,52 +908,19 @@ textarea {
     font-size: 15px;
 }
 
-@media screen and (max-width:1199px) {
-    .team-member-secondary{
-        margin-top: 220px;
-    }
-}
-
-@media screen and (max-width:991px) {
-    .team-member-secondary{
-        margin-top: 120px;
-    }
-}
-
-@media screen and (max-width:767px) {
-    .team-member-secondary{
-        margin-top: 50px;
-    }
-}
-
 @media screen and (max-width:508px) {
-    .team-member-secondary{
-        margin-top: 30px;
-    }
     .team-member-secondary h3{
         font-size: 18px;
     }
 }
 
 @media screen and (max-width:450px) {
-    .team-member-secondary{
-        margin-top: 10px;
-    }
     .team-member-secondary h3{
         font-size: 16px;
     }
 }
 
-@media screen and (max-width:425px) {
-    .team-member-secondary{
-        margin-top: -15px;
-    }
-}
-
 @media screen and (max-width:325px) {
-    .team-member-secondary{
-        margin-top: -20px;
-    }
     .team-member-secondary h3{
         font-size: 12px;
     }
@@ -1508,11 +1569,11 @@ li.right-it {
     .about-us-image img {
         width: 325px;
     }
-
+    /*
     .team-member-treeee {
-        height: 350px;
+        height: 325px;
     }
-
+    */
     .team-member-fourtyfour {
         height: 200px;
     }
@@ -1536,10 +1597,6 @@ li.right-it {
         height: 70px;
     }
 
-    .team-member-treeee {
-        height: 450px;
-    }
-
     .team-member-fourtyfour {
         height: 250px;
     }
@@ -1556,10 +1613,6 @@ li.right-it {
 
     .team-member-main {
         height: 400px;
-    }
-
-    .team-member-treeee {
-        height: 500px;
     }
 
     .team-member-text-fourtyfour h3 {
@@ -1733,6 +1786,7 @@ li.right-it {
 }
 
 /* Debugging ghost mode
+
 * {
     background: #000 !important;
     color: #0f0 !important;
