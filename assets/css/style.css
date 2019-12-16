@@ -54,6 +54,12 @@ header {
     margin: 5px;
 }
 
+@media screen and (max-width: 323px){
+    .about-headings{
+        font-size: 25px !important;
+    }
+}
+
 .about-text {
     font-size:16px;
     text-align: center;
