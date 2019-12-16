@@ -63,6 +63,28 @@
     }
 }
 
+.project-spotlight{
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.project-details{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.project-details p{
+    align-self: center;
+}
+
+.project-image img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+}
+
 .product-image img {
     max-width: 100%;
     padding: 2%;
@@ -80,3 +102,14 @@
     flex-flow: column wrap;
     justify-content: center;
 }
+
+.carousel-item {
+    height: 500px;
+  }
+  
+  .carousel-item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 300px;
+  }
