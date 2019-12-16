@@ -74,6 +74,16 @@
     border-radius: 8px;
 }
 
+.spotlight-row{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content:center;
+}
+
+.project-spotlight a{
+    align-self:center;
+}
+
 .project-details{
     display:flex;
     flex-flow: row wrap;
