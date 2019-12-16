@@ -764,30 +764,29 @@ textarea {
     height:auto;
     display:flex;
     flex-flow:column nowrap;
-    align-self: flex-start;
+    align-self: center;
 }
 
 .team-member-image img {
-    max-width: 100%;
+    max-width: 35%;
     padding: 3px;
     border-radius: 15px;
     margin-top: 10px;
     height: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .profile_details{
-    padding-top:80px;
+    padding-top:90px;
+    justify-content:center;
+    display:flex;
+    flex-flow: column nowrap;
 }
 
 .passion_experience{
-    padding-top:0px;
-}
-
-@media screen and (min-width:768px){
-    .passion_experience{
-        padding-top:50px;
-    }
+    padding-top:10px;
 }
 
 @media screen and (max-width:478px) {
@@ -799,20 +798,20 @@ textarea {
 .profile_text_container{
     display:flex;
     justify-content: flex-end;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
 }
 
 .profile_text{
     display:flex;
     flex-flow: column wrap;
     align-self:center;
-    text-align: right;
+    text-align: center;
 }
 
 .profile_pic_container{
     display:flex;
-    justify-content: flex-start;
-    flex-flow: row wrap;
+    justify-content: center;
+    flex-flow: column nowrap;
 }
 
 .profile_pic{
@@ -827,13 +826,20 @@ textarea {
     flex-flow: row wrap;
 }
 
-.quote{
-    display:flex;
-    flex-flow: column wrap;
-    align-self:center;
-    text-align: left;
+.quote h3{
+    text-align: center;
     font-style: italic;
     font-family: "glober", "Geneva", "Tahoma", "sans-serif";
+}
+
+.quote h5{
+    text-align: center;
+    font-style: italic;
+    font-family: "glober", "Geneva", "Tahoma", "sans-serif";
+}
+
+.quote{
+    padding-top: 20px;
 }
 
 @media screen and (max-width:767px){
@@ -852,6 +858,13 @@ textarea {
     .quote{
         padding-top:20px;
     }
+}
+
+.team-member-text-main{
+    display:flex;
+    align-self:center;
+    flex-flow: column nowrap;
+    text-align: center;
 }
 
 .team-member-text-main h1 {
