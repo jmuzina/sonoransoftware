@@ -68,6 +68,9 @@
     flex-flow: column wrap;
     justify-content: center;
     align-content: center;
+    background-color: #cbcbcb;
+    padding-bottom: 10px;
+    border-radius: 8px;
 }
 
 .project-details{
