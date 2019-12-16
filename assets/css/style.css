@@ -1112,7 +1112,7 @@ input[name="r"] {
 
 @media screen and (max-width: 1200px) {
     .card{
-        height: 425px;
+        height: 97%;
     }
 }
 
