@@ -1108,6 +1108,13 @@ textarea {
     text-align: center;
 }
 
+.product-image img {
+    max-width: 100%;
+    padding: 2%;
+    flex-shrink: 1;
+}
+
+
 .product-info-image img {
     width: 400px;
     padding: 20px;
