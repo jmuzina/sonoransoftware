@@ -1139,7 +1139,7 @@ textarea {
 .product-desc-img-col iframe{
     box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    max-width: 480px;
+    max-width: 100%;
     height: 264.8px;
 }
 
