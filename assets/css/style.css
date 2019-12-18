@@ -94,6 +94,23 @@ header {
     text-align: center;
 }
 
+.product-header {
+    color: black;
+    font-family: "glober", "Geneva", "Tahoma", "sans-serif";
+    font-size: 5vmin;
+    text-align: center;
+}
+
+
+@media screen and (max-width:500px){
+    .welcome-subheader{
+        font-size: 20px;
+    }
+    .product-header{
+        font-size: 25px;
+    }
+}
+
 .welcome-bottom-headers-container{
     display:flex;
     margin-bottom: auto;
@@ -175,6 +192,17 @@ header {
     font-size: 30px !important;
     font-weight: bold;
     margin: 5px;
+}
+
+.product-heading {
+    font-weight: bold;
+    margin: 5px;
+}
+
+@media screen and (min-width: 992px){
+    .product-heading{
+        font-size: 30px !important;
+    }
 }
 
 @media screen and (max-width: 323px){
@@ -343,6 +371,9 @@ header {
     .about-headings{
         font-size:28px;
     }
+    .product-heading{
+        font-size: 23px;
+    }
     .about-text{
         font-size:16px;
     }
@@ -366,6 +397,9 @@ header {
     }
     .about-headings{
         font-size:26px;
+    }
+    .product-heading{
+        font-size:21px;
     }
     .about-text{
         font-size:14px;
@@ -403,6 +437,9 @@ header {
     .about-headings{
         font-size:24px;
     }
+    .product-heading{
+        font-size:24px;
+    }
     .about-text{
         font-size:13px;
     }
@@ -425,6 +462,9 @@ header {
         height:420px;
     }
     .about-headings{
+        font-size:20px;
+    }
+    .product-heading{
         font-size:20px;
     }
     .about-text{
@@ -453,6 +493,9 @@ header {
 @media screen and (max-width:569px) {
     .about-headings{
         font-size:19px;
+    }
+    .product-heading{
+        font-size:17px;
     }
     .about-text{
         font-size:12px;
@@ -1120,11 +1163,6 @@ textarea {
     justify-content: space-evenly;
 }
 
-.product-bullet-item{
-    text-align:left;
-    list-style-type: disc;;
-}
-
 .product-desc-img-col img{
     box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -1139,8 +1177,13 @@ textarea {
 .product-desc-img-col iframe{
     box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    max-width: 480px;
-    height: 264.8px;
+    max-width: 100%;
+}
+
+@media screen and (min-width:575px){
+    .product-desc-img-col iframe{
+        height: 264.8px;
+    }
 }
 
 .product-page-desc-img{
@@ -1186,6 +1229,12 @@ textarea {
 
 .product-info-button-area {
     padding: 20px;
+}
+
+.product-download-col{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 .contact-form-label, .contact-form-input {
