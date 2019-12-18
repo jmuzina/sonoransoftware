@@ -1120,11 +1120,6 @@ textarea {
     justify-content: space-evenly;
 }
 
-.product-bullet-item{
-    text-align:left;
-    list-style-type: disc;;
-}
-
 .product-desc-img-col img{
     box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -1186,6 +1181,12 @@ textarea {
 
 .product-info-button-area {
     padding: 20px;
+}
+
+.product-download-col{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 .contact-form-label, .contact-form-input {
