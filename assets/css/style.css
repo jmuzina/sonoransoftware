@@ -1114,6 +1114,33 @@ textarea {
     flex-shrink: 1;
 }
 
+.product-desc-img-col{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+
+.product-page-desc-img{
+    margin: auto;
+    align-self: center;
+}
+
+.product-page-desc-img img{
+    width: 100%;
+}
+
+.product-page-img{
+    width: auto;
+    height: auto;
+    max-width: 40vw;
+}
+
+.product-page-item{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
 
 .product-info-image img {
     width: 400px;
