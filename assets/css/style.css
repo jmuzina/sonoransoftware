@@ -101,6 +101,7 @@ header {
     text-align: center;
 }
 
+
 @media screen and (max-width:500px){
     .welcome-subheader{
         font-size: 20px;
@@ -191,6 +192,17 @@ header {
     font-size: 30px !important;
     font-weight: bold;
     margin: 5px;
+}
+
+.product-heading {
+    font-weight: bold;
+    margin: 5px;
+}
+
+@media screen and (min-width: 992px){
+    .product-heading{
+        font-size: 30px !important;
+    }
 }
 
 @media screen and (max-width: 323px){
@@ -359,6 +371,9 @@ header {
     .about-headings{
         font-size:28px;
     }
+    .product-heading{
+        font-size: 23px;
+    }
     .about-text{
         font-size:16px;
     }
@@ -382,6 +397,9 @@ header {
     }
     .about-headings{
         font-size:26px;
+    }
+    .product-heading{
+        font-size:21px;
     }
     .about-text{
         font-size:14px;
@@ -419,6 +437,9 @@ header {
     .about-headings{
         font-size:24px;
     }
+    .product-heading{
+        font-size:24px;
+    }
     .about-text{
         font-size:13px;
     }
@@ -441,6 +462,9 @@ header {
         height:420px;
     }
     .about-headings{
+        font-size:20px;
+    }
+    .product-heading{
         font-size:20px;
     }
     .about-text{
@@ -469,6 +493,9 @@ header {
 @media screen and (max-width:569px) {
     .about-headings{
         font-size:19px;
+    }
+    .product-heading{
+        font-size:17px;
     }
     .about-text{
         font-size:12px;
