@@ -94,9 +94,19 @@ header {
     text-align: center;
 }
 
+.product-header {
+    color: black;
+    font-family: "glober", "Geneva", "Tahoma", "sans-serif";
+    font-size: 5vmin;
+    text-align: center;
+}
+
 @media screen and (max-width:500px){
     .welcome-subheader{
         font-size: 20px;
+    }
+    .product-header{
+        font-size: 25px;
     }
 }
 
