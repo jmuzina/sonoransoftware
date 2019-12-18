@@ -74,6 +74,12 @@ header {
     }
 }
 
+@media screen and (max-width:991px){
+    .nav-bg{
+        background-color: rgb(231, 231, 231);
+    }
+}
+
 .welcome-top-headers-container{
     display:flex;
     margin-top: auto;
@@ -2015,6 +2021,10 @@ li.right-it {
 .nav-custom-links{
     font-size: auto;
     font-family: "glober";
+}
+
+.nav-col{
+    background-color:#e7e7e7;
 }
 
 @media screen and (min-width:928px){
