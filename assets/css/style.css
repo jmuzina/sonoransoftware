@@ -43,6 +43,10 @@ header {
     background-color: #e7e7e7;
 }
 
+nav-dark {
+    background-color: #272727;
+}
+
 ::selection {
     background: #0071ce;
 }
@@ -66,6 +70,10 @@ header {
     background-color: #cbcbcb;
     flex-flow: column wrap;
     padding-top: 120px;
+}
+
+.welcome-dark{
+    background-color: #272a2e;
 }
 
 @media screen and (max-width:570px){
@@ -102,6 +110,13 @@ header {
 
 .product-header {
     color: black;
+    font-family: "glober", "Geneva", "Tahoma", "sans-serif";
+    font-size: 5vmin;
+    text-align: center;
+}
+
+.product-header-dark {
+    color: #ffffff;
     font-family: "glober", "Geneva", "Tahoma", "sans-serif";
     font-size: 5vmin;
     text-align: center;
@@ -205,6 +220,10 @@ header {
     margin: 5px;
 }
 
+.product-heading-dark {
+    color: #e7e7e7
+}
+
 @media screen and (min-width: 992px){
     .product-heading{
         font-size: 30px !important;
@@ -221,6 +240,10 @@ header {
     font-size:16px;
     text-align: center;
     font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.about-text-dark {
+    color: #cacaca;
 }
 
 .bg-image {

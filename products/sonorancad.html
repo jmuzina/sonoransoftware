@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,9 +29,9 @@
     <!-- Navbar Start -->
     <header>
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #e7e7e7;">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
                 <a class="navbar-brand logo" href="./../" style="margin-right:7%; margin-left:2%;">
-                    <img src="../assets/images/logo2.png" alt=""> 
+                    <img src="../assets/images/logo_grey_2.png" alt=""> 
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -38,20 +39,20 @@
                 <div class="collapse navbar-collapse nav-bg nav-custom-links" id="navbarSupportedContent" style="border-radius: 12px; padding: 5px;">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="./../">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="./../" style="color: #ffffff;">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./../about">About</a>
+                            <a class="nav-link" href="./../about" style="color: #ffffff;">About</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ffffff;">
                             Products</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="./../products/sonorancad">SonoranCAD</a>
+                            <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item bg-dark" href="./../products/sonorancad" style="color: #ffffff;">SonoranCAD</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="modal" data-target="#contactModal" style="cursor:pointer;">Contact</a>
+                            <a class="nav-link" data-toggle="modal" data-target="#contactModal" style="cursor:pointer; color: #ffffff;">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -109,24 +110,27 @@
         </div>
     </div>
     <div class="main">
-        <div class="welcome-container" style="padding-bottom:10px;">
+        
+        <div class="welcome-container welcome-dark" style="padding-bottom:10px;">
             <div class = "welcome-top-headers-container">
-                <h1 class="product-header">Sonoran CAD</h1>
+                <h1 class="product-header-dark">Sonoran CAD</h1>
             </div>
+            
             <div class="products">
                 <div>
                     <img class="product-page-img" src="../assets/images/sonoran_cad_all_devices.png" alt="">
                 </div>
             </div>
+            
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid" style="background-color: #343a40;">
             <div class="container">
                 <div class="row" style="flex-flow: column nowrap;">
                     <div data-aos="fade" data-aos-anchor-placement="top-bottom">
                         <p class="welcome-subheader" style="text-align:center; padding-top:4px;">
                             Overview
                         </p>
-                        <p class="about-text">
+                        <p class="about-text-dark">
                             Sonoran CAD is a state of the art, cross-platform, computer automated dispatching and records management system for gaming communities. Sonoran CAD comes complete with real time connections, in-depth customization, voice commands, in-game integration, Discord WebHook notifications and more!
                         </p>
                     </div>
@@ -136,13 +140,13 @@
                             <div class="col-md-6 product-desc-text-col">
                                 <div class = "container-fluid product-page-item">
                                     <div class="company-info-text-2", style = "padding-top: 2%;">
-                                        <p class="product-heading" style="align-self:center;">
+                                        <p class="product-heading product-heading-dark" style="align-self:center;">
                                             Record Management
                                         </p>
-                                        <p class="about-text">
+                                        <p class="about-text about-text-dark">
                                             Sonoran CAD’s record management system allows users to easily fill out in-depth reports for arrests, citations, warrants, BOLOs and more.
                                         </p>
-                                        <p class="about-text">
+                                        <p class="about-text about-text-dark">
                                             Sonoran CAD allows users to easily search records, licenses and vehicle registrations via character name or license plate. Voice commands also aid in faster searches with audio alerts for warning flags.
                                         </p>
                                     </div>
@@ -156,13 +160,13 @@
                             <div class="col-md-6 product-desc-text-col">
                                 <div class = "container-fluid product-page-item">
                                     <div class="company-info-text-2", style = "padding-top: 2%;">
-                                        <p class="product-heading" style="align-self:center;">
+                                        <p class="product-heading product-heading-dark" style="align-self:center;">
                                             Intuitive Search
                                         </p>
-                                        <p class="about-text">
+                                        <p class="about-text about-text-dark">
                                             Sonoran CAD allows users to easily search records, licenses and vehicle registrations via character name or license plate
                                         </p>
-                                        <p class="about-text">
+                                        <p class="about-text about-text-dark">
                                             Voice commands also aid in faster searches with audio alerts for warning flags.
                                         </p>
                                     </div>
@@ -176,10 +180,10 @@
                             <div class="col-md-6 product-desc-text-col">
                                 <div class = "container-fluid product-page-item">
                                     <div class="company-info-text-2", style = "padding-top: 2%;">
-                                        <p class="product-heading" style="align-self:center;">
+                                        <p class="product-heading product-heading-dark" style="align-self:center;">
                                             Custom 10-Codes
                                         </p>
-                                        <p class="about-text">
+                                        <p class="about-text about-text-dark">
                                             Customize your community’s 10-codes and penal codes to be easily searched and referenced at any time.
                                         </p>
                                     </div>
@@ -193,17 +197,17 @@
                             <div class="col-md-6 product-desc-text-col">
                                 <div class = "container-fluid product-page-item">
                                     <div class="company-info-text-2", style = "padding-top: 2%;">
-                                        <p class="product-heading" style="align-self:center;">
+                                        <p class="product-heading product-heading-dark" style="align-self:center;">
                                             Discord Webhooks
                                         </p>
-                                        <p class="about-text">
+                                        <p class="about-text about-text-dark">
                                             Our Discord integration allows your community to receive real-time Discord WebHooks when:
                                         </p>
                                         <ul>
-                                            <li class="about-text">Dispatch calls are generated</li>
-                                            <li class="about-text">Police records are modifed</li>
-                                            <li class="about-text">Administrative actions occur</li>
-                                            <li class="about-text">and much more!</li>
+                                            <li class="about-text about-text-dark">Dispatch calls are generated</li>
+                                            <li class="about-text about-text-dark">Police records are modifed</li>
+                                            <li class="about-text about-text-dark">Administrative actions occur</li>
+                                            <li class="about-text about-text-dark">and much more!</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -216,10 +220,10 @@
                             <div class="col-md-6 product-desc-text-col">
                                 <div class = "container-fluid product-page-item">
                                     <div class="company-info-text-2", style = "padding-top: 2%;">
-                                        <p class="product-heading" style="align-self:center;">
+                                        <p class="product-heading product-heading-dark" style="align-self:center;">
                                             Database Sync
                                         </p>
-                                        <p class="about-text">
+                                        <p class="about-text about-text-dark">
                                             Database Sync allows Sonoran CAD to pull characters, licenses and vehicle registrations directly from your community’s SQL database.
                                         </p>
                                     </div>
@@ -233,7 +237,7 @@
                 </div>
             </div> 
         </div>
-        <div data-aos="fade" data-aos-anchor-placement="top-bottom" style="padding-top:12px; padding-bottom: 14px; margin-top:10px; background-color: #cbcbcb;">
+        <div data-aos="fade" data-aos-anchor-placement="top-bottom" style="padding-top:12px; padding-bottom: 14px; background-color: #272a2e;">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -248,7 +252,7 @@
                             <p class="about-headings" style="text-align:center; margin-bottom: 0; padding-top:8px; font-weight:bold; color: #0071ce;">
                                 Interested?
                             </p>
-                            <p class="about-text" style="text-align:center; margin-bottom:10px; font-weight:bold;">
+                            <p class="about-text about-text-dark" style="text-align:center; margin-bottom:10px; font-weight:bold;">
                                 Sign up your community for free today!
                             </p>
                             <div class="row" style="justify-content: center;">
