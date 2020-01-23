@@ -53,6 +53,13 @@
                         </p>
                     </div>
                 </div>
+                <div class="row button-row mt-3">
+                    <div class="col-md-4 button-col">
+                        <button type="button" class="btn product-button" onClick="document.getElementById('features').scrollIntoView();">Check out our features!</button>
+                        <button type="button" class="btn product-button mt-4" onClick="document.getElementById('register').scrollIntoView();">Register your community!</button>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>
@@ -163,7 +170,7 @@
             <div class="container-fluid">
                 <div class="row" style="flex-flow: column nowrap;">
                     <div data-aos="fade" data-aos-anchor-placement="top-bottom">
-                        <h1 class="top-category feature-header feature-category" style="text-align:center;">
+                        <h1 class="top-category feature-header feature-category" style="text-align:center;" id = "features">
                             Features
                         </h1>
                     </div>
@@ -551,7 +558,7 @@
         </div>
         <div style="padding-top:12px; padding-bottom: 14px; background-color: #272a2e;">
             <div class="container" data-aos="fade" data-aos-anchor-placement="top-bottom">
-                <div class="row">
+                <div class="row" id="register">
                     <div class="col-md-6">
                         <div class="products">
                             <div>

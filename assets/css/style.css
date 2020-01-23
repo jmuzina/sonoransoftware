@@ -290,6 +290,24 @@ nav-dark {
     color: #e7e7e7
 }
 
+.button-col {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+
+.button-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.product-button {
+    background-color: #0071ce;
+    color: #f3f3f3;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
 @media screen and (min-width: 992px){
     .product-heading{
         font-size: 30px !important;
