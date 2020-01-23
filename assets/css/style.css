@@ -79,6 +79,7 @@ nav-dark {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 80vw;
 }
 
 @media screen and (max-width: 340px) {
@@ -278,7 +279,7 @@ nav-dark {
 }
 
 .overlay-text-dark {
-    font-size:18px;
+    font-size:22px;
     color: #f3f3f3;
     text-align: left;
     text-shadow: 7px 7px 7px black;
@@ -449,7 +450,7 @@ nav-dark {
         font-size: 23px;
     }
     .overlay-text-dark{
-        font-size: 17px;
+        font-size: 20px;
     }
     .about-text{
         font-size:16px;
@@ -479,7 +480,7 @@ nav-dark {
         font-size:21px;
     }
     .overlay-text-dark{
-        font-size: 15px;
+        font-size: 18px;
     }
     .about-text{
         font-size:14px;
@@ -521,7 +522,7 @@ nav-dark {
         font-size:24px;
     }
     .overlay-text-dark{
-        font-size: 14px;
+        font-size: 16px;
     }
     .about-text{
         font-size:13px;
@@ -551,7 +552,7 @@ nav-dark {
         font-size:20px;
     }
     .overlay-text-dark{
-        font-size: 13px;
+        font-size: 15px;
     }
     .about-text{
         font-size:12px;
@@ -584,7 +585,7 @@ nav-dark {
         font-size:17px;
     }
     .overlay-text-dark{
-        font-size: 13px;
+        font-size: 15px;
     }
     .about-text{
         font-size:12px;
@@ -1581,7 +1582,7 @@ nav {
     transition: background-color 400ms linear;
 }
 
-.change-nav.active {
+.change-nav.scrolled {
     background-color: #272a2e;
     color: #272a2e;
     transition: background-color 400ms linear;

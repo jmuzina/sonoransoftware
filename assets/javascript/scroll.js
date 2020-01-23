@@ -1,8 +1,12 @@
-$(window).on("scroll", function () {
-    if ($(window).scrollTop() > 800) {
-        $(".change-nav").addClass("active");
-    } else {
-        //remove the background property so it comes transparent again (defined in your css)
-        $(".change-nav").removeClass("active");
+
+
+window.addEventListener('scroll', function(e) {
+    last_known_scroll_position = window.scrollY;
+    let scroll_limit = 640;
+
+    if ((last_known_scroll_position > scroll_limit) && (!$(".change-nav").hasClass("scrolled"))) {
+        $(".change-nav").addClass("scrolled");
+    } else if ((last_known_scroll_position <= scroll_limit) && ($(".change-nav").hasClass("scrolled"))) {
+        $(".change-nav").removeClass("scrolled");
     }
-});
+  });
