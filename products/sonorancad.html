@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Required -->
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../assets/css/aos.css">
     <link rel='stylesheet' href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/hide_scroll.css">
     <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/f197f2acef.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
@@ -15,58 +17,97 @@
     -->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sonoran Software Systems | About</title>        
+    <title>Sonoran Software Systems | SonoranCAD</title>
     <!-- Open Graph / Social -->
     <meta property="og:site_name" content="Sonoran Software Systems LLC">
     <meta property="og:title" content="Sonoran Software Systems | SonoranCAD">
-    <meta property="og:description" content="Specializing in cross-platform application development, Sonoran Software Systems is devoted to outpacing competitors with more affordable, efficient and modern software solutions.">
-    <meta property="og:image" content="https://i.imgur.com/g3XXMi2.png">
-    <meta property="og:url" content="https://sonoran.software/">
+    <meta property="og:description"
+        content="Sonoran CAD is a state of the art, cross-platform, computer automated dispatching and records management system for gaming communities. Sonoran CAD comes complete with real time connections, in-depth customization, voice commands, in-game integration, Discord WebHook notifications and more!">
+    <meta property="og:image" content="https://sonoransoftware.com/assets/images/sonoran_cad_all_devices.png">
+    <meta property="og:url" content="https://sonoransoftware.com/products/sonorancad">
     <meta name="theme-color" content="#2d71b4">
 </head>
-<body>
+
+<body class="hide-scroll" style="background-color:#343a40;">
+    <div class="container-fluid" style="padding-left:0; padding-right:0;">
+        <video autoplay muted loop class="bg-video" id="myVideo" style="margin-top:-49px;">
+            <source src="../assets/background.mp4" type="video/mp4">
+        </video>
+        <div class="centered">
+            <div class="product-header-dark">
+                Sonoran CAD
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="overlay-text-dark" style="text-align: center;">
+                            Sonoran CAD is a state of the art, cross-platform, computer automated dispatching and records management
+                            system for
+                            gaming communities.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="overlay-text-dark" style="text-align: center;">
+                            Sonoran CAD comes complete with real time connections, in-depth customization, voice commands,
+                            in-game integration, Discord WebHook notifications and more!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
     <!-- Navbar Start -->
     <header>
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #e7e7e7;">
+            <nav class="navbar nav-noborder navbar-dark navbar-expand-lg fixed-top change-nav">
                 <a class="navbar-brand logo" href="./../" style="margin-right:7%; margin-left:2%;">
-                    <img src="../assets/images/logo2.png" alt=""> 
+                    <img src="../assets/images/sonorancad/logo_grey.png" alt="">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse nav-bg nav-custom-links" id="navbarSupportedContent" style="border-radius: 12px; padding: 5px;">
+                <div class="collapse navbar-collapse nav-bg nav-bg-dark nav-custom-links" id="navbarSupportedContent"
+                    style="border-radius: 12px; padding: 5px;">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="./../">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link nav-shadow" href="./../" style="color: #ffffff;">Home <span
+                                    class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./../about">About</a>
+                            <a class="nav-link nav-shadow" href="./../about" style="color: #ffffff;">About</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Products</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="./../products/sonorancad">SonoranCAD</a>
+                            <a class="nav-link dropdown-toggle nav-shadow" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                style="color: #ffffff;">
+                                Products</a>
+                            <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item bg-dark" href="./../products/sonorancad"
+                                    style="color: #ffffff;">SonoranCAD</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="modal" data-target="#contactModal" style="cursor:pointer;">Contact</a>
+                            <a class="nav-link nav-shadow" data-toggle="modal" data-target="#contactModal"
+                                style="cursor:pointer; color: #ffffff;">Contact</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
-    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel"
+        aria-hidden="true">
         <div class="contactModal modal-dialog" role="document">
             <div class="modal-content" style="background-color:#e7e7e7;">
                 <form action="../contact.php" method="post">
                     <div class="modal-header">
-                    <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                        <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
                     <div class="modal-body">
                         <div class="contact-form">
@@ -74,28 +115,37 @@
                                 <div class="form-row">
                                     <div class="col-md-5">
                                         <label class="contact-form-label">
-                                            <input type="text" name="name" class="contact-form-input form-name form-control" placeholder="Name" required style="border-radius:6px;">
+                                            <input type="text" name="name"
+                                                class="contact-form-input form-name form-control" placeholder="Name"
+                                                required style="border-radius:6px;">
                                         </label>
                                     </div>
                                     <div class="col-md-7">
                                         <label class="contact-form-label">
-                                            <input type="email" name="from" class="contact-form-input form-email form-control" placeholder="Email" required style="border-radius:6px;">
-                                        </label> 
+                                            <input type="email" name="from"
+                                                class="contact-form-input form-email form-control" placeholder="Email"
+                                                required style="border-radius:6px;">
+                                        </label>
                                     </div>
                                 </div>
                                 <div class="form-row mt-2">
                                     <div class="col-md-12">
                                         <label class="contact-form-label">
-                                            <input type="text" name="subject" class="contact-form-input form-subject form-control" placeholder="Subject" required style="border-radius:6px;">
+                                            <input type="text" name="subject"
+                                                class="contact-form-input form-subject form-control"
+                                                placeholder="Subject" required style="border-radius:6px;">
                                         </label>
-                                    </div> 
+                                    </div>
                                 </div>
                                 <div class="form-row mt-2">
                                     <div class="col-md-12">
                                         <label class="contact-form-label">
-                                            <textarea name="message" class="contact-form-input form-message form-control" style="height: 150px;" placeholder="Message" required style="border-radius:6px;"></textarea>
+                                            <textarea name="message"
+                                                class="contact-form-input form-message form-control"
+                                                style="height: 150px;" placeholder="Message" required
+                                                style="border-radius:6px;"></textarea>
                                         </label>
-                                    </div>   
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -109,187 +159,404 @@
         </div>
     </div>
     <div class="main">
-        <div class="welcome-container" style="padding-bottom:10px;">
-            <div class = "welcome-top-headers-container">
-                <h1 class="product-header">Sonoran CAD</h1>
-            </div>
-            <div class="products">
-                <div>
-                    <img class="product-page-img" src="../assets/images/sonoran_cad_all_devices.png" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid">
+        <div class="container-fluid" style="background-color: #343a40;">
             <div class="container">
                 <div class="row" style="flex-flow: column nowrap;">
                     <div data-aos="fade" data-aos-anchor-placement="top-bottom">
-                        <p class="welcome-subheader" style="text-align:center; padding-top:4px;">
-                            Overview
-                        </p>
-                        <p class="about-text">
-                            Sonoran CAD is a state of the art, cross-platform, computer automated dispatching and records management system for gaming communities. Sonoran CAD comes complete with real time connections, in-depth customization, voice commands, in-game integration, Discord WebHook notifications and more!
-                        </p>
+                        <h1 class="welcome-subheader feature-category" style="text-align:center;">
+                            Features
+                        </h1>
                     </div>
-                
+                    <!--
+                        Feature alignment
+
+                        Always hard-code the feature HTML as its header and text in the left column, and its image in the right column.
+                        Add the class "order-md-x" to both columns, where x is the desired column position in non-mobile screens.
+                        For example: order-md-1 sets a column to display on the far left edge of its container on non-mobile screens.
+                        order-md-12 sets it to dislay at the container's right edge. 
+
+                        This allows you to alternate column sides on larger screens, and avoid images occurring after other images on mobile.
+
+                        A feature with text on the left will have column orders of order-md-1 and order-md-12, in that order.
+                        Follow such features with other features of order order-md-12 and order-md-1 to alternate column sides.
+
+                        More info: https://getbootstrap.com/docs/4.0/layout/grid/#reordering
+                    -->
                     <div class="container-fluid">
                         <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" class="row">
-                            <div class="col-md-6 product-desc-text-col">
-                                <div class = "container-fluid product-page-item">
-                                    <div class="company-info-text-2", style = "padding-top: 2%;">
-                                        <p class="product-heading" style="align-self:center;">
-                                            Record Management
+                            <div class="col-md-6 order-md-1 product-desc-text-col">
+                                <div class="container-fluid product-page-item">
+                                    <div class="product-feature" , style="padding-top: 2%;">
+                                        <p class="product-heading product-heading-dark" style="align-self:center;">
+                                            Unique Window and Tab System
                                         </p>
-                                        <p class="about-text">
-                                            Sonoran CAD’s record management system allows users to easily fill out in-depth reports for arrests, citations, warrants, BOLOs and more.
-                                        </p>
-                                        <p class="about-text">
-                                            Sonoran CAD allows users to easily search records, licenses and vehicle registrations via character name or license plate. Voice commands also aid in faster searches with audio alerts for warning flags.
+                                        <p class="about-text about-text-dark">
+                                            Sonoran CAD’s unique window and tab system allows you to multitask easier.
+                                            Whether you’re viewing multiple records or referencing a list of 10-codes,
+                                            our draggable and resizable window system allows you to manage your workflow
+                                            efficiently.
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class = "col-md-6 product-page-desc-img product-desc-img-col">
-                                <img src="../assets/images/record_arrest.PNG" height = "auto" alt="">
-                            </div>  
+                            <div class="col-md-6 order-md-12 product-page-desc-img product-desc-img-col">
+                                <img src="../assets/images/sonorancad/window_tab.PNG" height="auto" alt="">
+                            </div>
                         </div>
                         <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" class="row">
-                            <div class="col-md-6 product-desc-text-col">
-                                <div class = "container-fluid product-page-item">
-                                    <div class="company-info-text-2", style = "padding-top: 2%;">
-                                        <p class="product-heading" style="align-self:center;">
+                            <div class="col-md-6 order-md-12 product-desc-text-col">
+                                <div class="container-fluid product-page-item">
+                                    <div class="product-feature" , style="padding-top: 2%;">
+                                        <p class="product-heading product-heading-dark" style="align-self:center;">
+                                            Live Map Access
+                                        </p>
+                                        <p class="about-text about-text-dark">
+                                            Easily link and display your community’s map or live map resource to be
+                                            accessed by emergency services.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 order-md-1 product-page-desc-img product-desc-img-col">
+                                <img src="../assets/images/sonorancad/live_map.PNG" height="auto" alt="">
+                            </div>
+                        </div>
+                        <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" class="row">
+                            <div class="col-md-6 order-md-1 product-desc-text-col">
+                                <div class="container-fluid product-page-item">
+                                    <div class="product-feature" , style="padding-top: 2%;">
+                                        <p class="product-heading product-heading-dark" style="align-self:center;">
+                                            Record Management
+                                        </p>
+                                        <p class="about-text about-text-dark">
+                                            Sonoran CAD’s record management system allows users to easily fill out
+                                            in-depth reports for arrests, citations, warrants, BOLOs and more.
+                                        </p>
+                                        <p class="about-text about-text-dark">
+                                            Sonoran CAD allows users to easily search records, licenses and vehicle
+                                            registrations via character name or license plate. Voice commands also aid
+                                            in faster searches with audio alerts for warning flags.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 order-md-12 product-page-desc-img product-desc-img-col">
+                                <img src="../assets/images/sonorancad/record_arrest.PNG" height="auto" alt="">
+                            </div>
+                        </div>
+                        <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" class="row">
+                            <div class="col-md-6 order-md-12 product-desc-text-col">
+                                <div class="container-fluid product-page-item">
+                                    <div class="product-feature" , style="padding-top: 2%;">
+                                        <p class="product-heading product-heading-dark" style="align-self:center;">
+                                            PDF Printed Records
+                                        </p>
+                                        <p class="about-text about-text-dark">
+                                            Are you looking to view or file official criminal records? Only Sonoran CAD
+                                            allows you to view and download a PDF copy!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 order-md-1 product-page-desc-img product-desc-img-col">
+                                <img src="../assets/images/sonorancad/pdf_record.PNG" height="auto" alt="">
+                            </div>
+                        </div>
+                        <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" class="row">
+                            <div class="col-md-6 order-md-1 product-desc-text-col">
+                                <div class="container-fluid product-page-item">
+                                    <div class="product-feature" , style="padding-top: 2%;">
+                                        <p class="product-heading product-heading-dark" style="align-self:center;">
                                             Intuitive Search
                                         </p>
-                                        <p class="about-text">
-                                            Sonoran CAD allows users to easily search records, licenses and vehicle registrations via character name or license plate
+                                        <p class="about-text about-text-dark">
+                                            Sonoran CAD allows users to easily search records, licenses and vehicle
+                                            registrations via character name or license plate
                                         </p>
-                                        <p class="about-text">
-                                            Voice commands also aid in faster searches with audio alerts for warning flags.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class = "col-md-6 product-page-desc-img product-desc-img-col">
-                                <img src="../assets/images/lookup.PNG" height = "auto" alt="">
-                            </div>  
-                        </div>
-                        <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" class="row" style="padding-top:12px;">
-                            <div class="col-md-6 product-desc-text-col">
-                                <div class = "container-fluid product-page-item">
-                                    <div class="company-info-text-2", style = "padding-top: 2%;">
-                                        <p class="product-heading" style="align-self:center;">
-                                            Custom 10-Codes
-                                        </p>
-                                        <p class="about-text">
-                                            Customize your community’s 10-codes and penal codes to be easily searched and referenced at any time.
+                                        <p class="about-text about-text-dark">
+                                            Voice commands also aid in faster searches with audio alerts for warning
+                                            flags.
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class = "col-md-6 product-page-desc-img product-desc-img-col">
-                                <img src="../assets/images/codes_10.PNG" height = "auto" alt="">
-                            </div>  
+                            <div class="col-md-6 order-md-12 product-page-desc-img product-desc-img-col">
+                                <img src="../assets/images/sonorancad/lookup.PNG" height="auto" alt="">
+                            </div>
                         </div>
-                        <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" class="row" style="padding-top:18px;">
-                            <div class="col-md-6 product-desc-text-col">
-                                <div class = "container-fluid product-page-item">
-                                    <div class="company-info-text-2", style = "padding-top: 2%;">
-                                        <p class="product-heading" style="align-self:center;">
-                                            Discord Webhooks
+                        <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" class="row">
+                            <div class="col-md-6 order-md-12 product-desc-text-col">
+                                <div class="container-fluid product-page-item">
+                                    <div class="product-feature" , style="padding-top: 2%;">
+                                        <p class="product-heading product-heading-dark" style="align-self:center;">
+                                            Civillian Management
                                         </p>
-                                        <p class="about-text">
-                                            Our Discord integration allows your community to receive real-time Discord WebHooks when:
+                                        <p class="about-text about-text-dark">
+                                            Civilians can easily add, edit, and remove characters, view criminal
+                                            records, process DMV records, and more!
                                         </p>
-                                        <ul>
-                                            <li class="about-text">Dispatch calls are generated</li>
-                                            <li class="about-text">Police records are modifed</li>
-                                            <li class="about-text">Administrative actions occur</li>
-                                            <li class="about-text">and much more!</li>
+                                        <p class="about-text about-text-dark">
+                                            Civilians can also be automatically retrieved from your own in-game database
+                                            without having to be manually created! For
+                                            more information, check out our Database Sync functionality.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 order-md-1 product-page-desc-img product-desc-img-col">
+                                <img src="../assets/images/sonorancad/character.PNG" height="auto" alt="">
+                            </div>
+                        </div>
+                        <div data-aos="fade" data-aos-anchor-placement="top-bottom">
+                            <h1 class="welcome-subheader feature-category" style="text-align:center;">
+                                Community Branding
+                            </h1>
+                        </div>
+                        <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" class="row">
+                            <div class="col-md-6 order-md-1 product-desc-text-col">
+                                <div class="container-fluid product-page-item">
+                                    <div class="product-feature" , style="padding-top: 2%;">
+                                        <p class="product-heading product-heading-dark" style="align-self:center;">
+                                            Branded Login Page
+                                        </p>
+                                        <p class="about-text about-text-dark">
+                                            Sonoran CAD’s custom login screen allows you to display your community’s
+                                            name, logo, and colors on your own domain!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 order-md-12 product-page-desc-img product-desc-img-col">
+                                <img src="../assets/images/sonorancad/custom_login.PNG" height="auto" alt="">
+                            </div>
+                        </div>
+                        <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" class="row">
+                            <div class="col-md-6 order-md-12 product-desc-text-col">
+                                <div class="container-fluid product-page-item">
+                                    <div class="product-feature" , style="padding-top: 2%;">
+                                        <p class="product-heading product-heading-dark" style="align-self:center;">
+                                            Branded Emails
+                                        </p>
+                                        <p class="about-text about-text-dark">
+                                            Sonoran CAD allows you to customize account creation and password recovery
+                                            emails sent to your users with your logo,
+                                            header, subheader, and body text!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 order-md-1 product-page-desc-img product-desc-img-col">
+                                <img src="../assets/images/sonorancad/email.png" height="auto" alt="">
+                            </div>
+                        </div>
+                        <div data-aos="fade" data-aos-anchor-placement="top-bottom">
+                            <h1 class="welcome-subheader feature-category" style="text-align:center">
+                                Customization
+                            </h1>
+                        </div>
+                        <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" class="row"
+                            style="padding-top:12px;">
+                            <div class="col-md-6 order-md-1 product-desc-text-col">
+                                <div class="container-fluid product-page-item">
+                                    <div class="product-feature" , style="padding-top: 2%;">
+                                        <ul class="bulleted">
+                                            <li class="product-heading product-heading-dark">
+                                                Custom 10-Codes
+                                                <p class="about-text about-text-dark">
+                                                    Customize your community’s 10-codes and penal codes to be easily
+                                                    searched and referenced at any
+                                                    time.
+                                                </p>
+                                            </li>
+                                            <li class="product-heading product-heading-dark">
+                                                Penal Codes
+                                                <p class="about-text about-text-dark">
+                                                    Easily customize your penal codes to quickly reference and add
+                                                    charges to any criminal record report.
+                                                </p>
+                                            </li>
+                                            <li class="product-heading product-heading-dark">
+                                                License Types
+                                                <p class="about-text about-text-dark">
+                                                    Add, edit, and remove license types to be used in the DMV!
+                                                </p>
+                                            </li>
+                                            <li class="product-heading product-heading-dark">
+                                                Page Colors
+                                                <p class="about-text about-text-dark">
+                                                    Customize your community’s page colors!
+                                                </p>
+                                            </li>
+                                            <li class="product-heading product-heading-dark">
+                                                Unit Status Codes
+                                                <p class="about-text about-text-dark">
+                                                    Configure the unit status 10-Codes that your community uses!
+                                                </p>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class = "col-md-6 product-page-desc-img product-desc-img-col">
-                                <img src="../assets/images/webhook.PNG" height = "auto" alt="">
-                            </div>  
+                            <div class="col-md-6 order-md-12 product-page-desc-img product-desc-img-col">
+                                <img src="../assets/images/sonorancad/ten_codes_full.PNG" height="auto" alt="">
+                            </div>
                         </div>
-                        <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" class="row" style="padding-top:18px;">
-                            <div class="col-md-6 product-desc-text-col">
-                                <div class = "container-fluid product-page-item">
-                                    <div class="company-info-text-2", style = "padding-top: 2%;">
-                                        <p class="product-heading" style="align-self:center;">
+
+                        <div data-aos="fade" data-aos-anchor-placement="top-bottom">
+                            <h1 class="welcome-subheader feature-category" style="text-align:center;">
+                                Integration Options
+                            </h1>
+                        </div>
+                        <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" class="row">
+                            <div class="col-md-6 order-md-1 product-desc-text-col">
+                                <div class="container-fluid product-page-item">
+                                    <div class="product-feature" , style="padding-top: 2%;">
+                                        <p class="product-heading product-heading-dark" style="align-self:center;">
                                             Database Sync
                                         </p>
-                                        <p class="about-text">
-                                            Database Sync allows Sonoran CAD to pull characters, licenses and vehicle registrations directly from your community’s SQL database.
+                                        <p class="about-text about-text-dark">
+                                            Sonoran CAD’s Database Sync allows you to pull characters, licenses, and
+                                            vehicle registrations all directly from your
+                                            in-game database. This will work with nearly any MySQL Database:
+                                        </p>
+                                        <ul class="bulleted about-text about-text-dark">
+                                            <li>FiveM (ESC or other)</li>
+                                            <li>Arma 3</li>
+                                            <li>Garry's Mod</li>
+                                        </ul>
+                                        <p class="about-text about-text-dark">and many more!</p>
+                                        <div class="mb-5" style="text-align:center;">
+                                            <a href="https://youtu.be/PfYfdUHXg_M" target="_blank"><button
+                                                    class="button"><span>Tutorial</span></button></a>
+                                            <a href="https://sonoransoftware.com/tutorials/sonorancad/database_sync.pdf"
+                                                target="_blank"><button class="button"><span
+                                                        style="font-size: 13px;">Documentation</span></button></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 order-md-12 product-page-desc-img product-desc-img-col">
+                                <img src="../assets/images/sonorancad/dbsync.PNG" height="auto" alt="">
+                            </div>
+                        </div>
+                        <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" class="row">
+                            <div class="col-md-6 order-md-12 product-desc-text-col">
+                                <div class="container-fluid product-page-item">
+                                    <div class="product-feature" , style="padding-top: 2%;">
+                                        <p class="product-heading product-heading-dark" style="align-self:center;">
+                                            Discord Webhooks
+                                        </p>
+                                        <p class="about-text about-text-dark">
+                                            Discord webhooks can be configured to alert your community when dispatches
+                                            are sent, records are modified, unit’s are in
+                                            a PANIC state, characters are modified, admin actions take place, and so
+                                            much more!
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class = "col-md-6 product-page-desc-img product-desc-img-col">
-                                <iframe src="https://www.youtube.com/embed/PfYfdUHXg_M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>  
+                            <div class="col-md-6 order-md-1 product-page-desc-img product-desc-img-col">
+                                <img src="../assets/images/sonorancad/webhooks.PNG" height="auto" alt="">
+                            </div>
                         </div>
-                    </div>      
+                        <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" class="row mt-3 mb-4">
+                            <div style="text-align: center;">
+                                <p class="product-heading product-heading-dark" style="align-self:center;">
+                                    Web API
+                                </p>
+                                <p class="about-text about-text-dark" style="text-align: center;">
+                                    Sonoran CAD’s web API allows you to send real time in-game data to your CAD!
+                                    Automatically update unit location in real time, toggle a unit’s PANIC state
+                                    in-game, send 911 calls, and more!
+                                </p>
+                                <div style="text-align:center;">
+                                    <a href="https://sonoransoftware.com/tutorials/sonorancad/SonoranCADIntegration.zip"
+                                        target="_blank"><button class="button"><span>Example</span></button></a>
+                                    <a href="https://sonoransoftware.com/tutorials/sonorancad/api.pdf"
+                                        target="_blank"><button class="button"><span
+                                                style="font-size: 13px;">Documentation</span></button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div> 
+            </div>
         </div>
-        <div data-aos="fade" data-aos-anchor-placement="top-bottom" style="padding-top:12px; padding-bottom: 14px; margin-top:10px; background-color: #cbcbcb;">
-            <div class="container">
+        <div style="padding-top:12px; padding-bottom: 14px; background-color: #272a2e;">
+            <div class="container" data-aos="fade" data-aos-anchor-placement="top-bottom">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="products">
                             <div>
-                                <img class="product-page-img" src="../assets/images/sonorancad_phone_4.png" alt="">
+                                <img class="product-page-img" src="../assets/images/sonorancad/sonorancad_phone_4.png"
+                                    alt="">
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 product-download-col">
                         <div style="align-self:center;">
-                            <p class="about-headings" style="text-align:center; margin-bottom: 0; padding-top:8px; font-weight:bold; color: #0071ce;">
+                            <p class="about-headings"
+                                style="text-align:center; margin-bottom: 0; padding-top:8px; font-weight:bold; color: #0071ce;">
                                 Interested?
                             </p>
-                            <p class="about-text" style="text-align:center; margin-bottom:10px; font-weight:bold;">
+                            <p class="about-text about-text-dark"
+                                style="text-align:center; margin-bottom:10px; font-weight:bold;">
                                 Sign up your community for free today!
                             </p>
                             <div class="row" style="justify-content: center;">
-                                <a href="https://sonorancad.com" style="padding:4px;"><img src="../assets/images/vtw.png" alt="View Website" class="info-button"></a>
-                                <a href="https://github.com/SonoranBrian/sc2_quasar/releases/latest/download/Sonoran-CAD-Setup-1.6.0.exe" style="padding:4px;"><img src="../assets/images/dfw.png" alt="Windows Download" class="info-button"></a>
-                                <a href="https://sonorancad.com/#/downloads" style="padding:4px;"><img src="../assets/images/dfm.png" alt="MacOS Download" class="info-button"></a>
-                                <a href="https://sonorancad.com/#/downloads" style="padding:4px;"><img src="../assets/images/dfi.png" alt="iOS Download" class="info-button"></a>
-                                <a href="https://play.google.com/store/apps/details?id=sonorancad.app" style="padding:4px;"><img src="../assets/images/dfa.png" alt="Android Download" class="info-button"></a>
+                                <a href="https://sonorancad.com" style="padding:4px;"><img
+                                        src="../assets/images/sonorancad/vtw.png" alt="View Website"
+                                        class="info-button"></a>
+                                <a href="https://github.com/SonoranBrian/sc2_quasar/releases/latest/download/Sonoran-CAD-Setup-1.6.0.exe"
+                                    style="padding:4px;"><img src="../assets/images/sonorancad/dfw.png"
+                                        alt="Windows Download" class="info-button"></a>
+                                <a href="https://sonorancad.com/#/downloads" style="padding:4px;"><img
+                                        src="../assets/images/sonorancad/dfm.png" alt="MacOS Download"
+                                        class="info-button"></a>
+                                <a href="https://sonorancad.com/#/downloads" style="padding:4px;"><img
+                                        src="../assets/images/sonorancad/dfi.png" alt="iOS Download"
+                                        class="info-button"></a>
+                                <a href="https://play.google.com/store/apps/details?id=sonorancad.app"
+                                    style="padding:4px;"><img src="../assets/images/sonorancad/dfa.png"
+                                        alt="Android Download" class="info-button"></a>
                             </div>
                         </div>
-                    </div>  
+                    </div>
                 </div>
             </div>
-        </div> 
+        </div>
     </div>
 
-    <footer style = "background-color: #191919; position: relative; height: auto;">    
-        <div class = "container">
-            <div class = "row">
-                <div class = "col-md-6 left-footer-links">
-                    
-                        <h1 style = "color:white;">
-                            Connect With Us
-                        </h1>
-                        <ul>
-                            <li><a href="https://discord.gg/CBzQWC2"><span class="icon"><i class="fab fa-discord"></i></span> Discord</a></li>
-                            <li><a href="https://www.linkedin.com/company/sonoran-software-systems/"><span class="icon"><i class="fab fa-linkedin-in"></i></span> LinkedIn</a></li>
-                            <li><a href="mailto:info@sonoransoftware.com"><span class="icon"><i class="fas fa-envelope"></i></span> Email</a></li>
-                        </ul>
+    <footer style="background-color: #191919; position: relative; height: auto;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 left-footer-links">
+
+                    <h1 style="color:white;">
+                        Connect With Us
+                    </h1>
+                    <ul class="bulleted">
+                        <li><a href="https://discord.gg/CBzQWC2"><span class="icon"><i
+                                        class="fab fa-discord"></i></span> Discord</a></li>
+                        <li><a href="https://www.linkedin.com/company/sonoran-software-systems/"><span class="icon"><i
+                                        class="fab fa-linkedin-in"></i></span> LinkedIn</a></li>
+                        <li><a href="mailto:info@sonoransoftware.com"><span class="icon"><i
+                                        class="fas fa-envelope"></i></span> Email</a></li>
+                    </ul>
                 </div>
-                <div class = "col-md-6 right-footer-links">
-                    <h1 style = "color:white;">
+                <div class="col-md-6 right-footer-links">
+                    <h1 style="color:white;">
                         Helpful Links
                     </h1>
                     <ul>
                         <li><a href="./about">About Us</a></li>
-                        <li><a data-toggle="modal" data-target="#contactModal" style="cursor:pointer; color:#007bff;">Contact Us</a></li>
+                        <li><a data-toggle="modal" data-target="#contactModal"
+                                style="cursor:pointer; color:#007bff;">Contact Us</a></li>
                         <li class="footer-submenu">Products</li>
-                            <ul>
-                                <li><a href="./products/sonorancad"><small>SonoranCAD</small></a></li>
-                            </ul>
+                        <ul>
+                            <li><a href="./products/sonorancad"><small>SonoranCAD</small></a></li>
+                        </ul>
                     </ul>
                 </div>
             </div>
@@ -302,12 +569,20 @@
             </div>
         </div>
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
     <script src="../assets/javascript/script.js"></script>
+    <script src="../assets/javascript/scroll.js"></script>
     <script src="../assets/javascript/aos.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <script>AOS.init({duration: "2000"});</script>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+    <script>AOS.init({ duration: "2000" });</script>
 </body>
+
 </html>

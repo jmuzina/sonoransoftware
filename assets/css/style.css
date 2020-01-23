@@ -37,10 +37,18 @@ ul {
     list-style: none;
 }
 
+.bulleted {
+    list-style: square inside url('../images/bullet.png');
+}
+
 header {
     width: 100%;
     position: absolute;
     background-color: #e7e7e7;
+}
+
+nav-dark {
+    background-color: #272727;
 }
 
 ::selection {
@@ -61,29 +69,51 @@ header {
     justify-content: center;
 }
 
+.products-underlay-bg{
+    position: relative;
+    text-align: center;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 340px) {
+    .centered{
+       top: 60%; 
+    }
+}
+
 .welcome-container{
     display:flex;
     background-color: #cbcbcb;
     flex-flow: column wrap;
-    padding-top: 120px;
+    padding-top: 80px;
+}
+
+.welcome-dark{
+    background-color: #272a2e;
 }
 
 @media screen and (max-width:570px){
     .welcome-container{
-        padding-top:100px;
-    }
-}
-
-@media screen and (max-width:991px){
-    .nav-bg{
-        background-color: rgb(231, 231, 231);
+        padding-top:66.67px;
     }
 }
 
 .welcome-top-headers-container{
     display:flex;
-    margin-top: auto;
+    margin-top: 8px;
     flex-flow: column wrap;
+}
+
+@media screen and (max-width: 570px) {
+    .welcome-top-headers-container{
+        margin-top: 20px;
+    }
 }
 
 .welcome-header{
@@ -105,6 +135,14 @@ header {
     font-family: "glober", "Geneva", "Tahoma", "sans-serif";
     font-size: 5vmin;
     text-align: center;
+}
+
+.product-header-dark {
+    color: #ffffff;
+    font-family: "glober", "Geneva", "Tahoma", "sans-serif";
+    font-size: 5vmin;
+    text-align: center;
+    text-shadow: 5px 5px 5px black;
 }
 
 
@@ -205,6 +243,10 @@ header {
     margin: 5px;
 }
 
+.product-heading-dark {
+    color: #e7e7e7
+}
+
 @media screen and (min-width: 992px){
     .product-heading{
         font-size: 30px !important;
@@ -223,6 +265,19 @@ header {
     font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
+.about-text-dark {
+    color: #cacaca;
+    text-align: left;
+}
+
+.overlay-text-dark {
+    font-size:18px;
+    color: #f3f3f3;
+    text-align: left;
+    text-shadow: 7px 7px 7px black;
+    font-weight: bold;
+}
+
 .bg-image {
     background-image: url("https://www.tsico.com/wp-content/uploads/2017/07/GettyImages-629285904.jpg");
   
@@ -235,6 +290,12 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .bg-video {
+    filter: blur(5px) grayscale(60%);
+    height: 114vh;
+    margin-bottom: -8px;
   }
 
 .bg-text > h1{
@@ -380,6 +441,9 @@ header {
     .product-heading{
         font-size: 23px;
     }
+    .overlay-text-dark{
+        font-size: 17px;
+    }
     .about-text{
         font-size:16px;
     }
@@ -406,6 +470,9 @@ header {
     }
     .product-heading{
         font-size:21px;
+    }
+    .overlay-text-dark{
+        font-size: 15px;
     }
     .about-text{
         font-size:14px;
@@ -446,6 +513,9 @@ header {
     .product-heading{
         font-size:24px;
     }
+    .overlay-text-dark{
+        font-size: 14px;
+    }
     .about-text{
         font-size:13px;
     }
@@ -472,6 +542,9 @@ header {
     }
     .product-heading{
         font-size:20px;
+    }
+    .overlay-text-dark{
+        font-size: 13px;
     }
     .about-text{
         font-size:12px;
@@ -502,6 +575,9 @@ header {
     }
     .product-heading{
         font-size:17px;
+    }
+    .overlay-text-dark{
+        font-size: 13px;
     }
     .about-text{
         font-size:12px;
@@ -1207,6 +1283,11 @@ textarea {
     max-width: 40vw;
 }
 
+.product-blur{
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
 .product-page-item{
     display:flex;
     flex-flow: row nowrap;
@@ -1483,6 +1564,46 @@ nav {
     border-bottom: 2px solid #191919;
 }
 
+.nav-noborder {
+    border-bottom: none;
+}
+
+.change-nav {
+    background-color: none;
+    color: none;
+    transition: background-color 400ms linear;
+}
+
+.change-nav.active {
+    background-color: #272a2e;
+    color: #272a2e;
+    transition: background-color 400ms linear;
+}
+
+.nav-shadow {
+    text-shadow: 5px 5px 5px black;
+}
+
+@media screen and (max-width:991px){
+    .nav-bg{
+        background-color: rgb(231, 231, 231);
+    }
+    .nav-bg-dark{
+        background-color: #272a2e;
+    }
+    .nav-shadow {
+        text-shadow: 0 0 0;
+    }
+    .change-nav {
+        background-color: #272a2e;
+        color: #272a2e;
+    }
+}
+
+.transparent-drop {
+    background-color: none;
+}
+
 .logo img {
     width: 152px;
     height: 50px;
@@ -1661,6 +1782,24 @@ li.right-it {
 
 .company-info-text-2 h1 {
     font-size: 70px;
+}
+
+.feature-category {
+    padding-top: 15px;
+}
+
+.product-feature {
+    text-align: left;
+}
+
+.product-feature h1 {
+    font-size: 70px;
+}
+
+@media screen and (max-width: 775px) {
+    .product-feature h1 {
+        font-size: 45px;
+    }
 }
 
 .company-info-2 p {
