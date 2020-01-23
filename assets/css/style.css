@@ -106,8 +106,14 @@ nav-dark {
 
 .welcome-top-headers-container{
     display:flex;
-    margin-top: auto;
+    margin-top: 8px;
     flex-flow: column wrap;
+}
+
+@media screen and (max-width: 570px) {
+    .welcome-top-headers-container{
+        margin-top: 20px;
+    }
 }
 
 .welcome-header{
