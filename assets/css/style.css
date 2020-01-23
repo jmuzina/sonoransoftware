@@ -189,6 +189,9 @@ nav-dark {
     .welcome-subheader{
         font-size: 20px;
     }
+    .feature-header{
+        font-size: 20px;
+    }
     .product-header{
         font-size: 25px;
     }
@@ -1853,6 +1856,13 @@ li.right-it {
 .feature-category {
     padding-top: 15px;
     border: 1px dashed #272a2e;
+}
+
+.feature-header{
+    color: #318ad3;
+    font-family: "glober", "Geneva", "Tahoma", "sans-serif";
+    font-size: 4vmin;
+    text-align: center;
 }
 
 .product-feature {
