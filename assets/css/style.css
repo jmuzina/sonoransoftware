@@ -1861,6 +1861,14 @@ li.right-it {
 
 .top-category {
     margin-top: 10px;
+    padding-top: 16px;
+}
+
+@media screen and (max-width: 600px) {
+    .top-category {
+        padding-top: 8px;
+        margin-top: 13px;
+    }
 }
 
 .feature-header{
