@@ -340,16 +340,16 @@ nav-dark {
     margin-bottom: -8px;
     object-fit: cover;
     object-position: 50% 0;
-    width: 1920px;
-    height: 1080px;
+    width: 100vw;
+    height: 110vh;
   }
   .bg-mobile-image {
     filter: blur(5px) grayscale(60%);
     margin-bottom: -8px;
     object-fit: cover;
     object-position: 50% 0;
-    width: 1920px;
-    height: 100vh;
+    max-width: 100vw;
+    height: 110vh;
   }
 
 .bg-text > h1{
@@ -1859,10 +1859,14 @@ li.right-it {
     border: 1px dashed #272a2e;
 }
 
+.top-category {
+    margin-top: 10px;
+}
+
 .feature-header{
     color: #318ad3;
     font-family: "glober", "Geneva", "Tahoma", "sans-serif";
-    font-size: 4vmin;
+    font-size: 6vmin;
     text-align: center;
 }
 
