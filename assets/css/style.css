@@ -307,9 +307,10 @@ nav-dark {
     font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
-.about-text-dark {
+.feature-text {
     color: #cacaca;
     text-align: left;
+    font-size: 20px;
 }
 
 .overlay-text-dark {
