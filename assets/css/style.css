@@ -33,9 +33,11 @@ a {
     text-decoration: none;
 }
 
+/*
 ul {
     list-style: none;
 }
+*/
 
 header {
     width: 100%;
@@ -63,6 +65,18 @@ nav-dark {
     flex-flow: row nowrap;
     align-content: center;
     justify-content: center;
+}
+
+.products-underlay-bg{
+    position: relative;
+    text-align: center;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .welcome-container{
@@ -120,6 +134,7 @@ nav-dark {
     font-family: "glober", "Geneva", "Tahoma", "sans-serif";
     font-size: 5vmin;
     text-align: center;
+    text-shadow: 2px 2px 2px black;
 }
 
 
@@ -244,6 +259,14 @@ nav-dark {
 
 .about-text-dark {
     color: #cacaca;
+    text-align: left;
+}
+
+.overlay-text-dark {
+    font-size:18px;
+    color: #cacaca;
+    text-align: left;
+    text-shadow: 2px 2px 2px black;
 }
 
 .bg-image {
@@ -403,6 +426,9 @@ nav-dark {
     .product-heading{
         font-size: 23px;
     }
+    .overlay-text-dark{
+        font-size: 17px;
+    }
     .about-text{
         font-size:16px;
     }
@@ -429,6 +455,9 @@ nav-dark {
     }
     .product-heading{
         font-size:21px;
+    }
+    .overlay-text-dark{
+        font-size: 15px;
     }
     .about-text{
         font-size:14px;
@@ -469,6 +498,9 @@ nav-dark {
     .product-heading{
         font-size:24px;
     }
+    .overlay-text-dark{
+        font-size: 14px;
+    }
     .about-text{
         font-size:13px;
     }
@@ -495,6 +527,9 @@ nav-dark {
     }
     .product-heading{
         font-size:20px;
+    }
+    .overlay-text-dark{
+        font-size: 13px;
     }
     .about-text{
         font-size:12px;
@@ -525,6 +560,9 @@ nav-dark {
     }
     .product-heading{
         font-size:17px;
+    }
+    .overlay-text-dark{
+        font-size: 13px;
     }
     .about-text{
         font-size:12px;
@@ -1230,6 +1268,11 @@ textarea {
     max-width: 40vw;
 }
 
+.product-blur{
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
 .product-page-item{
     display:flex;
     flex-flow: row nowrap;
@@ -1684,6 +1727,20 @@ li.right-it {
 
 .company-info-text-2 h1 {
     font-size: 70px;
+}
+
+.product-feature {
+    text-align: left;
+}
+
+.product-feature h1 {
+    font-size: 70px;
+}
+
+@media screen and (max-width: 775px) {
+    .product-feature h1 {
+        font-size: 45px;
+    }
 }
 
 .company-info-2 p {
