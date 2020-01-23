@@ -1859,6 +1859,10 @@ li.right-it {
     border: 1px dashed #272a2e;
 }
 
+.top-category {
+    margin-top: 4px;
+}
+
 .feature-header{
     color: #318ad3;
     font-family: "glober", "Geneva", "Tahoma", "sans-serif";
