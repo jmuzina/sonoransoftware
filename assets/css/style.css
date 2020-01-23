@@ -38,7 +38,7 @@ ul {
 }
 
 .bulleted {
-    list-style: outside;
+    list-style: square inside url('../images/bullet.png');
 }
 
 header {
