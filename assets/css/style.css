@@ -286,6 +286,7 @@ nav-dark {
 }
 
 .product-heading-dark {
+    margin-left: 0;
     color: #e7e7e7
 }
 
@@ -1855,12 +1856,20 @@ li.right-it {
 }
 
 .feature-category {
-    padding-top: 15px;
+    padding-top: 6px;
     border: 1px dashed #272a2e;
 }
 
 .top-category {
     margin-top: 10px;
+    padding-top: 16px;
+}
+
+@media screen and (max-width: 600px) {
+    .top-category {
+        padding-top: 8px;
+        margin-top: 13px;
+    }
 }
 
 .feature-header{
