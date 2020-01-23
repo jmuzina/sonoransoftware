@@ -98,12 +98,6 @@ nav-dark {
     }
 }
 
-@media screen and (max-width:991px){
-    .nav-bg{
-        background-color: rgb(231, 231, 231);
-    }
-}
-
 .welcome-top-headers-container{
     display:flex;
     margin-top: auto;
@@ -1570,6 +1564,22 @@ nav {
 
 .nav-shadow {
     text-shadow: 5px 5px 5px black;
+}
+
+@media screen and (max-width:991px){
+    .nav-bg{
+        background-color: rgb(231, 231, 231);
+    }
+    .nav-bg-dark{
+        background-color: #272a2e;
+    }
+    .nav-shadow {
+        text-shadow: 0 0 0;
+    }
+    .change-nav {
+        background-color: #272a2e;
+        color: #272a2e;
+    }
 }
 
 .transparent-drop {
