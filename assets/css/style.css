@@ -138,11 +138,18 @@ nav-dark {
 }
 
 .product-header-dark {
-    color: #ffffff;
+    color: #0071ce;
     font-family: "glober", "Geneva", "Tahoma", "sans-serif";
-    font-size: 5vmin;
+    font-size: 10vmin;
     text-align: center;
     text-shadow: 5px 5px 5px black;
+    left: 50%;
+}
+
+@media screen and (max-width:854px){
+    .product-header-dark {
+        font-size: 8vmin;
+    }
 }
 
 
