@@ -1,6 +1,6 @@
 window.addEventListener('scroll', function(e) {
     last_known_scroll_position = window.scrollY;
-    let scroll_limit = 640;
+    let scroll_limit = $(window).height() * 0.92;
 
     if ((last_known_scroll_position > scroll_limit) && (!$(".change-nav").hasClass("scrolled"))) {
         $(".change-nav").addClass("scrolled");
