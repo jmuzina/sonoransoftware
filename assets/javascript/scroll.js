@@ -8,3 +8,9 @@ window.addEventListener('scroll', function(e) {
         $(".change-nav").removeClass("scrolled");
     }
   });
+
+$("video").ready(function () {
+    if ($(window).width() < 768) { // viewing on a phone
+        $("video").replaceWith("<img class='bg-mobile-image' src='../assets/images/sonorancad/video-still.png'></img>");
+    }
+});
