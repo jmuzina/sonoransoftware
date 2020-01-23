@@ -33,11 +33,13 @@ a {
     text-decoration: none;
 }
 
-/*
 ul {
     list-style: none;
 }
-*/
+
+.bulleted {
+    list-style: outside;
+}
 
 header {
     width: 100%;
@@ -1727,6 +1729,10 @@ li.right-it {
 
 .company-info-text-2 h1 {
     font-size: 70px;
+}
+
+.feature-category {
+    padding-top: 15px;
 }
 
 .product-feature {

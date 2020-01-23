@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -110,7 +109,6 @@
         </div>
     </div>
     <div class="main">
-        
         <div class="welcome-container welcome-dark" style="padding-bottom:10px;">
             <div class="products-underlay-bg" data-aos="fade" data-aos-anchor-placement="top-bottom">
                 <img class="product-page-img product-blur" src="../assets/images/sonorancad/sonoran_cad_all_devices.png" alt="">
@@ -135,24 +133,34 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-            
-        </div>
-
-        
+        </div>  
         <div class="container-fluid" style="background-color: #343a40;">
             <div class="container">
                 <div class="row" style="flex-flow: column nowrap;">
                     <div data-aos="fade" data-aos-anchor-placement="top-bottom">
-                        <p class="welcome-subheader" style="text-align:center; padding-top:4px;">
+                        <p class="welcome-subheader feature-category" style="text-align:center;">
                             Features
                         </p>
                     </div>
-                
+                    <!--
+                        Feature alignment
+
+                        Always hard-code the feature HTML as its header and text in the left column, and its image in the right column.
+                        Add the class "order-md-x" to both columns, where x is the desired column position in non-mobile screens.
+                        For example: order-md-1 sets a column to display on the far left edge of its container on non-mobile screens.
+                        order-md-12 sets it to dislay at the container's right edge. 
+
+                        This allows you to alternate column sides on larger screens, and avoid images occurring after other images on mobile.
+
+                        A feature with text on the left will have column orders of order-md-1 and order-md-12, in that order.
+                        Follow such features with other features of order order-md-12 and order-md-1 to alternate column sides.
+
+                        More info: https://getbootstrap.com/docs/4.0/layout/grid/#reordering
+                    -->
                     <div class="container-fluid">
                         <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" class="row">
-                            <div class="col-md-6 product-desc-text-col">
+                            <div class="col-md-6 order-md-1 product-desc-text-col">
                                 <div class="container-fluid product-page-item">
                                     <div class="product-feature" , style="padding-top: 2%;">
                                         <p class="product-heading product-heading-dark" style="align-self:center;">
@@ -164,15 +172,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 product-page-desc-img product-desc-img-col">
+                            <div class="col-md-6 order-md-12 product-page-desc-img product-desc-img-col">
                                 <img src="../assets/images/sonorancad/window_tab.PNG" height="auto" alt="">
                             </div>
                         </div>
                         <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" class="row">
-                            <div class="col-md-6 product-page-desc-img product-desc-img-col">
-                                <img src="../assets/images/sonorancad/live_map.PNG" height="auto" alt="">
-                            </div>
-                            <div class="col-md-6 product-desc-text-col">
+                            <div class="col-md-6 order-md-12 product-desc-text-col">
                                 <div class="container-fluid product-page-item">
                                     <div class="product-feature" , style="padding-top: 2%;">
                                         <p class="product-heading product-heading-dark" style="align-self:center;">
@@ -184,9 +189,12 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-md-6 order-md-1 product-page-desc-img product-desc-img-col">
+                                <img src="../assets/images/sonorancad/live_map.PNG" height="auto" alt="">
+                            </div>
                         </div>
                         <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" class="row">
-                            <div class="col-md-6 product-desc-text-col">
+                            <div class="col-md-6 order-md-1 product-desc-text-col">
                                 <div class = "container-fluid product-page-item">
                                     <div class="product-feature", style = "padding-top: 2%;">
                                         <p class="product-heading product-heading-dark" style="align-self:center;">
@@ -201,15 +209,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class = "col-md-6 product-page-desc-img product-desc-img-col">
+                            <div class = "col-md-6 order-md-12 product-page-desc-img product-desc-img-col">
                                 <img src="../assets/images/sonorancad/record_arrest.PNG" height = "auto" alt="">
                             </div>  
                         </div>
                         <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" class="row">
-                            <div class="col-md-6 product-page-desc-img product-desc-img-col">
-                                <img src="../assets/images/sonorancad/pdf_record.PNG" height="auto" alt="">
-                            </div>
-                            <div class="col-md-6 product-desc-text-col">
+                            <div class="col-md-6 order-md-12 product-desc-text-col">
                                 <div class="container-fluid product-page-item">
                                     <div class="product-feature" , style="padding-top: 2%;">
                                         <p class="product-heading product-heading-dark" style="align-self:center;">
@@ -221,9 +226,12 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-md-6 order-md-1 product-page-desc-img product-desc-img-col">
+                                <img src="../assets/images/sonorancad/pdf_record.PNG" height="auto" alt="">
+                            </div>
                         </div>
                         <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" class="row">
-                            <div class="col-md-6 product-desc-text-col">
+                            <div class="col-md-6 order-md-1 product-desc-text-col">
                                 <div class = "container-fluid product-page-item">
                                     <div class="product-feature", style = "padding-top: 2%;">
                                         <p class="product-heading product-heading-dark" style="align-self:center;">
@@ -238,15 +246,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class = "col-md-6 product-page-desc-img product-desc-img-col">
+                            <div class = "col-md-6 order-md-12 product-page-desc-img product-desc-img-col">
                                 <img src="../assets/images/sonorancad/lookup.PNG" height = "auto" alt="">
                             </div>  
                         </div>
                         <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" class="row">
-                            <div class="col-md-6 product-page-desc-img product-desc-img-col">
-                                <img src="../assets/images/sonorancad/character.PNG" height="auto" alt="">
-                            </div>
-                            <div class="col-md-6 product-desc-text-col">
+                            <div class="col-md-6 order-md-12 product-desc-text-col">
                                 <div class="container-fluid product-page-item">
                                     <div class="product-feature" , style="padding-top: 2%;">
                                         <p class="product-heading product-heading-dark" style="align-self:center;">
@@ -262,14 +267,17 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-md-6 order-md-1 product-page-desc-img product-desc-img-col">
+                                <img src="../assets/images/sonorancad/character.PNG" height="auto" alt="">
+                            </div>
                         </div>
                         <div data-aos="fade" data-aos-anchor-placement="top-bottom">
-                            <p class="welcome-subheader" style="text-align:center; padding-top:4px;">
+                            <p class="welcome-subheader feature-category" style="text-align:center;">
                                 Community Branding
                             </p>
                         </div>
                         <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" class="row">
-                            <div class="col-md-6 product-desc-text-col">
+                            <div class="col-md-6 order-md-1 product-desc-text-col">
                                 <div class="container-fluid product-page-item">
                                     <div class="product-feature" , style="padding-top: 2%;">
                                         <p class="product-heading product-heading-dark" style="align-self:center;">
@@ -281,15 +289,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 product-page-desc-img product-desc-img-col">
+                            <div class="col-md-6 order-md-12 product-page-desc-img product-desc-img-col">
                                 <img src="../assets/images/sonorancad/custom_login.PNG" height="auto" alt="">
                             </div>
                         </div>
                         <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" class="row">
-                            <div class="col-md-6 product-page-desc-img product-desc-img-col">
-                                <img src="../assets/images/sonorancad/email.png" height="auto" alt="">
-                            </div>
-                            <div class="col-md-6 product-desc-text-col">
+                            <div class="col-md-6 order-md-12 product-desc-text-col">
                                 <div class="container-fluid product-page-item">
                                     <div class="product-feature" , style="padding-top: 2%;">
                                         <p class="product-heading product-heading-dark" style="align-self:center;">
@@ -302,14 +307,17 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-md-6 order-md-1 product-page-desc-img product-desc-img-col">
+                                <img src="../assets/images/sonorancad/email.png" height="auto" alt="">
+                            </div>
                         </div>
                         <div data-aos="fade" data-aos-anchor-placement="top-bottom">
-                            <p class="welcome-subheader" style="text-align:center; padding-top:4px;">
+                            <p class="welcome-subheader feature-category" style="text-align:center">
                                 Customization
                             </p>
                         </div>
                         <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" class="row" style="padding-top:12px;">
-                            <div class="col-md-6 product-desc-text-col">
+                            <div class="col-md-6 order-md-1 product-desc-text-col">
                                 <div class="container-fluid product-page-item">
                                     <div class="product-feature" , style="padding-top: 2%;">
                                         <p class="product-heading product-heading-dark" style="align-self:center;">
@@ -322,15 +330,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 product-page-desc-img product-desc-img-col">
+                            <div class="col-md-6 order-md-12 product-page-desc-img product-desc-img-col">
                                 <img src="../assets/images/sonorancad/codes_10.PNG" height="auto" alt="">
                             </div>
                         </div>
                         <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" class="row">
-                            <div class="col-md-6 product-page-desc-img product-desc-img-col">
-                                <img src="../assets/images/sonorancad/penal_codes.PNG" height="auto" alt="">
-                            </div>
-                            <div class="col-md-6 product-desc-text-col">
+                            <div class="col-md-6 order-md-12 product-desc-text-col">
                                 <div class="container-fluid product-page-item">
                                     <div class="product-feature" , style="padding-top: 2%;">
                                         <p class="product-heading product-heading-dark" style="align-self:center;">
@@ -342,14 +347,17 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-md-6 order-md-1 product-page-desc-img product-desc-img-col">
+                                <img src="../assets/images/sonorancad/penal_codes.PNG" height="auto" alt="">
+                            </div>
                         </div>
                         <div data-aos="fade" data-aos-anchor-placement="top-bottom">
-                            <p class="welcome-subheader" style="text-align:center; padding-top:4px;">
+                            <p class="welcome-subheader feature-category" style="text-align:center;">
                                 Integration Options
                             </p>
                         </div>
                         <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" class="row">
-                            <div class="col-md-6 product-desc-text-col">
+                            <div class="col-md-6 order-md-1 product-desc-text-col">
                                 <div class="container-fluid product-page-item">
                                     <div class="product-feature" , style="padding-top: 2%;">
                                         <p class="product-heading product-heading-dark" style="align-self:center;">
@@ -357,9 +365,15 @@
                                         </p>
                                         <p class="about-text about-text-dark">
                                             Sonoran CAD’s Database Sync allows you to pull characters, licenses, and vehicle registrations all directly from your
-                                            in-game database. This will work with nearly any MySQL Database: FiveM (ESX or other), Arma 3, Garry’s Mod, etc.
+                                            in-game database. This will work with nearly any MySQL Database:
                                         </p>
-                                        <div class = "mb-3" style="text-align:center;">
+                                        <ul class="bulleted about-text about-text-dark">
+                                            <li>FiveM (ESC or other)</li>
+                                            <li>Arma 3</li>
+                                            <li>Garry's Mod</li>
+                                        </ul>
+                                        <p class="about-text about-text-dark">and many more!</p>
+                                        <div class = "mb-5" style="text-align:center;">
                                             <a href="https://youtu.be/PfYfdUHXg_M" target="_blank"><button class="button"><span>Tutorial</span></button></a>
                                             <a href="https://sonoransoftware.com/tutorials/sonorancad/database_sync.pdf" target="_blank"><button class="button"><span style="font-size: 13px;">Documentation</span></button></a>
                                         </div>
@@ -367,15 +381,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 product-page-desc-img product-desc-img-col">
-                                <img src="../assets/images/sonorancad/dbsync_new.PNG" height="auto" alt="">
+                            <div class="col-md-6 order-md-12 product-page-desc-img product-desc-img-col">
+                                <img src="../assets/images/sonorancad/dbsync.PNG" height="auto" alt="">
                             </div>
                         </div>
                         <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" class="row">
-                            <div class="col-md-6 product-page-desc-img product-desc-img-col">
-                                <img src="../assets/images/sonorancad/webhooks.PNG" height="auto" alt="">
-                            </div>
-                            <div class="col-md-6 product-desc-text-col">
+                            <div class="col-md-6 order-md-12 product-desc-text-col">
                                 <div class="container-fluid product-page-item">
                                     <div class="product-feature" , style="padding-top: 2%;">
                                         <p class="product-heading product-heading-dark" style="align-self:center;">
@@ -387,6 +398,9 @@
                                         </p>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="col-md-6 order-md-1 product-page-desc-img product-desc-img-col">
+                                <img src="../assets/images/sonorancad/webhooks.PNG" height="auto" alt="">
                             </div>
                         </div>
                         <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" class="row mt-3">
@@ -402,8 +416,7 @@
                                     <a href="https://sonoransoftware.com/tutorials/sonorancad/SonoranCADIntegration.zip" target="_blank"><button class="button"><span>Example</span></button></a>
                                     <a href="https://sonoransoftware.com/tutorials/sonorancad/api.pdf" target="_blank"><button class="button"><span style="font-size: 13px;">Documentation</span></button></a>
                                 </div>
-                            </div>
-                            
+                            </div>   
                         </div>
                     </div>      
                 </div>
@@ -449,7 +462,7 @@
                         <h1 style = "color:white;">
                             Connect With Us
                         </h1>
-                        <ul>
+                        <ul class="bulleted">
                             <li><a href="https://discord.gg/CBzQWC2"><span class="icon"><i class="fab fa-discord"></i></span> Discord</a></li>
                             <li><a href="https://www.linkedin.com/company/sonoran-software-systems/"><span class="icon"><i class="fab fa-linkedin-in"></i></span> LinkedIn</a></li>
                             <li><a href="mailto:info@sonoransoftware.com"><span class="icon"><i class="fas fa-envelope"></i></span> Email</a></li>
