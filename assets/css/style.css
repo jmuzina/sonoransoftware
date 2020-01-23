@@ -79,7 +79,33 @@ nav-dark {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 80vw;
 }
+/*
+@media screen and (max-width: 1500px) {
+    .centered{
+       top: 40%; 
+    }
+}
+
+@media screen and (max-width: 1235px) {
+    .centered{
+       top: 30%; 
+    }
+}
+
+@media screen and (max-width: 835px) {
+    .centered{
+       top: 24%; 
+    }
+}
+
+@media screen and (max-width: 735px) {
+    .centered{
+       top: 23%; 
+    }
+}
+*/
 
 @media screen and (max-width: 340px) {
     .centered{
@@ -138,16 +164,32 @@ nav-dark {
 }
 
 .product-header-dark {
-    color: #ffffff;
+    color: #0071ce;
     font-family: "glober", "Geneva", "Tahoma", "sans-serif";
-    font-size: 5vmin;
+    font-size: 10vmin;
     text-align: center;
     text-shadow: 5px 5px 5px black;
+    left: 50%;
+}
+
+@media screen and (max-width:854px){
+    .product-header-dark {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width:324px){
+    .product-header-dark {
+        font-size: 38px;
+    }
 }
 
 
 @media screen and (max-width:500px){
     .welcome-subheader{
+        font-size: 20px;
+    }
+    .feature-header{
         font-size: 20px;
     }
     .product-header{
@@ -265,13 +307,14 @@ nav-dark {
     font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
-.about-text-dark {
+.feature-text {
     color: #cacaca;
     text-align: left;
+    font-size: 20px;
 }
 
 .overlay-text-dark {
-    font-size:18px;
+    font-size:22px;
     color: #f3f3f3;
     text-align: left;
     text-shadow: 7px 7px 7px black;
@@ -294,8 +337,19 @@ nav-dark {
 
   .bg-video {
     filter: blur(5px) grayscale(60%);
-    height: 114vh;
     margin-bottom: -8px;
+    object-fit: cover;
+    object-position: 50% 0;
+    width: 1920px;
+    height: 1080px;
+  }
+  .bg-mobile-image {
+    filter: blur(5px) grayscale(60%);
+    margin-bottom: -8px;
+    object-fit: cover;
+    object-position: 50% 0;
+    width: 1920px;
+    height: 100vh;
   }
 
 .bg-text > h1{
@@ -442,7 +496,7 @@ nav-dark {
         font-size: 23px;
     }
     .overlay-text-dark{
-        font-size: 17px;
+        font-size: 20px;
     }
     .about-text{
         font-size:16px;
@@ -472,7 +526,7 @@ nav-dark {
         font-size:21px;
     }
     .overlay-text-dark{
-        font-size: 15px;
+        font-size: 18px;
     }
     .about-text{
         font-size:14px;
@@ -514,7 +568,7 @@ nav-dark {
         font-size:24px;
     }
     .overlay-text-dark{
-        font-size: 14px;
+        font-size: 16px;
     }
     .about-text{
         font-size:13px;
@@ -544,7 +598,7 @@ nav-dark {
         font-size:20px;
     }
     .overlay-text-dark{
-        font-size: 13px;
+        font-size: 15px;
     }
     .about-text{
         font-size:12px;
@@ -577,7 +631,7 @@ nav-dark {
         font-size:17px;
     }
     .overlay-text-dark{
-        font-size: 13px;
+        font-size: 15px;
     }
     .about-text{
         font-size:12px;
@@ -1262,6 +1316,22 @@ textarea {
     max-width: 100%;
 }
 
+.feature-img {
+    margin-top: 42px;
+}
+
+@media screen and (max-width: 768px) {
+    .feature-img {
+        margin-top: 10px;
+    }
+}
+
+.feature-row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
 @media screen and (min-width:575px){
     .product-desc-img-col iframe{
         height: 264.8px;
@@ -1574,7 +1644,7 @@ nav {
     transition: background-color 400ms linear;
 }
 
-.change-nav.active {
+.change-nav.scrolled {
     background-color: #272a2e;
     color: #272a2e;
     transition: background-color 400ms linear;
@@ -1786,10 +1856,23 @@ li.right-it {
 
 .feature-category {
     padding-top: 15px;
+    border: 1px dashed #272a2e;
+}
+
+.feature-header{
+    color: #318ad3;
+    font-family: "glober", "Geneva", "Tahoma", "sans-serif";
+    font-size: 4vmin;
+    text-align: center;
 }
 
 .product-feature {
     text-align: left;
+    padding-top: 2%;
+}
+
+.secondary {
+    background-color: #3b4046;
 }
 
 .product-feature h1 {
