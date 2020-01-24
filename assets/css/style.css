@@ -341,6 +341,7 @@ nav-dark {
     background-color: #0071ce;
     color: #f3f3f3;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 114.53px;
 }
 
 @media screen and (max-width: 478px) {
