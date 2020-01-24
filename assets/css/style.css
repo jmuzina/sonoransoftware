@@ -292,13 +292,13 @@ nav-dark {
 }
 
 .product-overview {
-    width: 44%;
+    width: 55%;
     align-self: center;
 }
 
 @media screen and (max-width: 925px) {
     .product-overview {
-        width: 80%;
+        width: 100%;
     }
 }
 
@@ -333,7 +333,7 @@ nav-dark {
 @media screen and (max-width: 374px) {
     .align-button {
         margin-left: 3px;
-        margin-top: 4px;
+        margin-top: 1px;
     }
 }
 
@@ -341,7 +341,7 @@ nav-dark {
     background-color: #0071ce;
     color: #f3f3f3;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 114.53px;
+    width: 125px;
 }
 
 @media screen and (max-width: 478px) {
