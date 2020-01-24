@@ -304,7 +304,7 @@ nav-dark {
 
 .product-heading-dark {
     margin-left: 0;
-    color: #e7e7e7
+    color: #318ad3;
 }
 
 .button-col {
@@ -1944,10 +1944,12 @@ li.right-it {
 }
 
 .feature-header{
-    color: #318ad3;
     font-family: "glober", "Geneva", "Tahoma", "sans-serif";
     font-size: 6vmin;
     text-align: center;
+
+    color: #e7e7e7;
+    text-shadow: 5px 5px 5px black;
 }
 
 .product-feature {
