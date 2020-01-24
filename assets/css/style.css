@@ -298,7 +298,7 @@ nav-dark {
 
 @media screen and (max-width: 925px) {
     .product-overview {
-        width: 80%;
+        width: 92%;
     }
 }
 
@@ -333,7 +333,7 @@ nav-dark {
 @media screen and (max-width: 374px) {
     .align-button {
         margin-left: 3px;
-        margin-top: 4px;
+        margin-top: 1px;
     }
 }
 
