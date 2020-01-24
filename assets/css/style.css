@@ -292,13 +292,13 @@ nav-dark {
 }
 
 .product-overview {
-    width: 44%;
+    width: 55%;
     align-self: center;
 }
 
 @media screen and (max-width: 925px) {
     .product-overview {
-        width: 92%;
+        width: 100%;
     }
 }
 
