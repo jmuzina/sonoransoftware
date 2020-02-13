@@ -29,3 +29,9 @@ $("video").ready(function () {
         $(".navbar-brand").replaceWith("<a class='navbar-brand logo' href='./' style='margin-right:7%; margin-left:2%;'></a>");
     }
 });
+
+$("nav").ready(function() {
+    if ($(window).width() < 992) {
+        $(".navbar-collapse").addClass("bg-dark");
+    }
+});
