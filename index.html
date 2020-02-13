@@ -129,61 +129,91 @@
                 </div>
             </div>
         </div>
-        <div class="main">
-            <div style = "background-color: #e7e7e7;">
-                    <div class = "container-fluid">
-                        <div class="container">
-                            <div class="row">
-                                <div class = "col-md-6 align-self-center">
-                                    <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" class="company-info-image">
-                                        <img src="./assets/images/logo2.png" height = "auto" alt="">
-                                    </div>
-                                </div>
-                                <div class = "col-md-6">
-                                    <div data-aos="fade" data-aos-anchor-placement="top-bottom" class="company-info-text-2", style = "padding-top: 2%;">
-                                        <p class="about-headings">
-                                            Our Technology
-                                        </p>
-                                        <p class="about-text">
-                                            We use the latest development tools available to ensure a fully responsive, efficient and innovative design. Our highly optimized deployments ensure high availability, low overhead and an immersive user experience.
-                                        </p>
-                                        <p class="about-headings">
-                                            Our Team
-                                        </p>
-                                        <p class="about-text">
-                                            Our team of dedicated professionals takes a personalized approach to every project. We take pride in ensuring quality, innovative solutions and an exceptional customer experience.
-                                        </p>
-                                        <a href="./about"><button class="button"><span>Learn more</span></button></a>
-                                    </div>
-                                </div>
+        <div class="main" style = "background-color: #343a40;">
+            <div class = "container-fluid">
+                <div class="row">   
+                    <div class="company-info-text-2", style = "padding-top: 2%;">
+                        <div>
+                            <p class="about-headings">
+                                Our Technology
+                            </p>
+                            <p class="about-text">
+                                To ensure an exceptional user experience, Sonoran Software Systems relies upon the industry’s latest technology frameworks. Take a look at some of the tools utilized in our technology stack.
+                            </p>
+                        </div>
+                       
+                        <div class="technologies-grid">
+                            <div class="technology" data-aos="fade" data-aos-anchor-placement="top-bottom">
+                                <img src="assets/images/home/dotnet_core.png" alt="">
+                                <p class="about-text">
+                                    Our backend API servers rely on the latest open-source, cross-platform, .Net Core framework from Microsoft.
+                                </p>
+                                <p class="about-text">
+                                    With .Net Core, we can easily scale and replicate nodes across the world to meet consumer demands.
+                                </p>
+                            </div>
+                            <div class="technology" data-aos="fade" data-aos-anchor-placement="top-bottom">
+                                <img src="assets/images/home/signalr.png" alt="">
+                                <p class="about-text">
+                                    SignalR brings our applications to life with real-time client-server communication.
+                                </p>
+                                <p class="about-text">
+                                    This open-source, open-protocol communication framework ensures proper authentication and scalability for an exceptional user experience.
+                                </p>
+                            </div>
+                            <div class="technology" data-aos="fade" data-aos-anchor-placement="top-bottom">
+                                <img src="assets/images/home/vue_js.png" class="mt-3" alt="">
+                                <p class="about-text">
+                                    Vue JS is a performance based reusable UI component framework.
+                                </p>
+                                <p class="about-text">
+                                    Sonoran Software Systems specializes in building fully responsive UI components that look great on any platform.
+                                </p>
+                            </div>
+                            <div class="technology" data-aos="fade" data-aos-anchor-placement="top-bottom">
+                                <img src="assets/images/home/quasar.png" class="mt-3" alt="">
+                                <p class="about-text mt-4">
+                                    The Quasar framework allows for rapid, cross-platform deployments to all major platforms.
+                                </p>
+                                <p class="about-text">
+                                    Whether we’re deploying to iOS, Android, OSX, Windows, or a web application, Quasar ensures simultaneous deployments with a single user interface.
+                                </p>
                             </div>
                         </div>
-                        
-                        <div class="row project-spotlight" data-aos="fade" data-aos-anchor-placement="top-bottom">
-                            <p class="about-headings" style="align-self: center; padding: 10px 0px 10px 0px">
-                                Product Spotlight
-                            </p>
-                            <div class="container">
-                                <div class="row spotlight-row">
-                                    <div class="col-md-6 project-image">
-                                        <div data-aos="fade-right" data-aos-anchor-placement="top-bottom">
-                                            <a href="assets/images/full_dispatch.PNG"><img src="./assets/images/full_dispatch.PNG" height = "auto"></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 project-details">
-                                        <p class="welcome-subheader">
-                                            <a href="products/sonorancad" style="text-decoration: none;">Sonoran CAD</a>
-                                        </p>
-                                        <p class="about-text">
-                                            Sonoran CAD is a state of the art, cross-platform, computer automated dispatching and records management system for gaming communities. Sonoran CAD comes complete with real time connections, in-depth customization, voice commands, in-game integration, Discord WebHook notifications and more!
-                                        </p>
-                                        <a href="./products/sonorancad"><button class="button"><span>Learn more</span></button></a>
-                                    </div>
+                        <p class="about-headings">
+                            Our Team
+                        </p>
+                        <p class="about-text">
+                            Our team of dedicated professionals takes a personalized approach to every project. We take pride in ensuring quality, innovative solutions and an exceptional customer experience.
+                        </p>
+                        <a href="./about"><button class="button"><span>Learn more</span></button></a>
+                    </div>
+                </div>
+                
+                <div class="row project-spotlight secondary" data-aos="fade" data-aos-anchor-placement="top-bottom">
+                    <p class="about-headings" style="align-self: center; padding: 10px 0px 10px 0px">
+                        Product Spotlight
+                    </p>
+                    <div class="container">
+                        <div class="row spotlight-row">
+                            <div class="col-md-6 project-image">
+                                <div data-aos="fade-right" data-aos-anchor-placement="top-bottom">
+                                    <a href="assets/images/full_dispatch.PNG"><img src="./assets/images/full_dispatch.PNG" height = "auto"></a>
                                 </div>
+                            </div>
+                            <div class="col-md-6 project-details">
+                                <p class="welcome-subheader">
+                                    <a href="products/sonorancad" style="text-decoration: none;">Sonoran CAD</a>
+                                </p>
+                                <p class="about-text">
+                                    Sonoran CAD is a state of the art, cross-platform, computer automated dispatching and records management system for gaming communities. Sonoran CAD comes complete with real time connections, in-depth customization, voice commands, in-game integration, Discord WebHook notifications and more!
+                                </p>
+                                <a href="./products/sonorancad"><button class="button"><span>Learn more</span></button></a>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
 
         <footer style = "background-color: #191919; position: relative; height: auto;">    
