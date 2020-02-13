@@ -2363,6 +2363,12 @@ li.right-it {
     background-color:#e7e7e7;
 }
 
+@media screen and (max-width: 991px) {
+    .navbar-collapse{
+        background-color: #030b16;
+    }
+}
+
 @media screen and (min-width:928px){
     .navbar-nav > li{
         padding-left:30px;
