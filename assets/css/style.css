@@ -395,6 +395,21 @@ nav-dark {
     background-size: cover;
   }
 
+  .main-video{
+    margin-bottom: -8px;
+    object-fit: cover;
+    object-position: 50% 0;
+    width: 100vw;
+    height: 110vh;
+    box-shadow: 0 0 25px black;
+  }
+  .main-mobile-image{
+    object-position: 50% 0;
+    object-fit: fill;
+    object-position: 50% 0;
+    max-width: 100vw;
+  }
+
   .bg-video {
     filter: blur(5px) grayscale(60%);
     margin-bottom: -8px;
@@ -1721,6 +1736,18 @@ nav {
 .change-nav.scrolled {
     background-color: #272a2e;
     color: #272a2e;
+    transition: background-color 400ms linear;
+}
+
+.change-nav-main {
+    background-color: none;
+    color: none;
+    transition: background-color 400ms linear;
+}
+
+.change-nav-main.scrolled {
+    background-color: #030b16;
+    color: #030b16;
     transition: background-color 400ms linear;
 }
 
