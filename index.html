@@ -34,20 +34,20 @@
                     <div class="collapse navbar-collapse nav-bg nav-custom-links navbar-dark" id="navbarSupportedContent" style="border-radius: 12px; padding: 5px;">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="./">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link nav-shadow" href="./">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="./about">About</a>
+                                <a class="nav-link nav-shadow" href="./about">About</a>
                             </li>
                             <li class="nav-item active dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle nav-shadow" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Products</a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="./products/sonorancad">SonoranCAD</a>
                                 </div>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" data-toggle="modal" data-target="#contactModal" style="cursor:pointer;">Contact</a>
+                                <a class="nav-link nav-shadow" data-toggle="modal" data-target="#contactModal" style="cursor:pointer;">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -104,11 +104,13 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid" style="padding-left:0; padding-right:0;">
-            <video id = "main" autoplay muted class="main-video" style="margin-top:-49px;">
-                <source src="assets/videos/logo_intro_cut.mp4" type="video/mp4">
-            </video>
-            <div class="centered">
+        <div class="container-fluid main-cont" style="padding-left:0; padding-right:0;">
+            <div id = "video">
+                <video id = "main" autoplay muted class="main-video" style="margin-top:-49px;">
+                    <source src="assets/videos/logo_intro_cut.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="centered-buttons">
                 <div class="product-header-dark">
                     <!--text can go here-->
                 </div>
@@ -121,15 +123,14 @@
                             <!--text can go here-->
                         </p>
                     </div>
-                    <div class="row button-row mt-3">
-                        <!--<button type="button" class="btn product-button" onClick="document.getElementById('features').scrollIntoView();">Learn More</button>
-                        <button type="button" class="btn product-button align-button" onClick="document.getElementById('register').scrollIntoView();" id = "features">Register Now</button>-->
+                    <div class="row fade-button-row mt-3" id="button-fade" style="display:none;">
+                        <button type="button" class="btn btn-outline-light product-button" id="b1" onClick="document.getElementById('technologies').scrollIntoView();">Our Technology</button>
+                        <a href="products/sonorancad"><button class="btn btn-outline-light product-button fade-align-button"><span>Products</span></button></a>
                     </div>
-                    
                 </div>
             </div>
         </div>
-        <div class="main" style = "background-color: #343a40;">
+        <div class="main mt-5" id = "technologies" style = "background-color: #343a40;">
             <div class = "container-fluid">
                 <div class="row">   
                     <div class="company-info-text-2", style = "padding-top: 2%;">
@@ -141,12 +142,11 @@
                                 To ensure an exceptional user experience, Sonoran Software Systems relies upon the industry’s latest technology frameworks. Take a look at some of the tools utilized in our technology stack.
                             </p>
                         </div>
-                       
-                        <div class="technologies-grid">
+                        <div class="technologies-grid mt-4 mb-2">
                             <div class="technology" data-aos="fade" data-aos-anchor-placement="top-bottom">
                                 <h2>.Net Core</h2>
                                 <img src="assets/images/home/dotnet_core.png" alt="">
-                                <p class="about-text">
+                                <p class="about-text mt-3">
                                     Our backend API servers rely on the latest open-source, cross-platform, .Net Core framework from Microsoft.
                                 </p>
                                 <p class="about-text">
@@ -165,7 +165,7 @@
                             </div>
                             <div class="technology" data-aos="fade" data-aos-anchor-placement="top-bottom">
                                 <h2>Vue JS</h2>
-                                <img src="assets/images/home/vue_js.png" class="mt-3" alt="">
+                                <img src="assets/images/home/vue_js.png" class="mt-2" alt="">
                                 <p class="about-text">
                                     Vue JS is a performance based reusable UI component framework.
                                 </p>
@@ -176,8 +176,8 @@
                             <div class="technology" data-aos="fade" data-aos-anchor-placement="top-bottom">
                                 <h2>Quasar</h2>
                                 <img src="assets/images/home/quasar.png" class="mt-3" alt="">
-                                <p class="about-text mt-4">
-                                    The Quasar framework allows for rapid, cross-platform deployments to all major platforms.
+                                <p class="about-text mt-2">
+                                    The Quasar framework allows for rapid, cross-platform deployments to all major devices.
                                 </p>
                                 <p class="about-text">
                                     Whether we’re deploying to iOS, Android, OSX, Windows, or a web application, Quasar ensures simultaneous deployments with a single user interface.
@@ -186,6 +186,8 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="container-fluid secondary">
                 <div class="row company-info-text-2 mt-4" data-aos="fade" data-aos-anchor-placement="top-bottom">
                     <div class="col-md-6 team-text">
                         <p class="about-headings">
@@ -227,13 +229,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="row project-spotlight" data-aos="fade" data-aos-anchor-placement="top-bottom">
+            </div>
+            <div class="container-fluid">
+                <div class="row project-spotlight mt-3" data-aos="fade" data-aos-anchor-placement="top-bottom">
                     <p class="about-headings" style="align-self: center; padding: 10px 0px 10px 0px">
                         Product Spotlight
                     </p>
                     <div class="container">
                         <div class="row spotlight-row">
-                            <div class="col-md-6 project-image">
+                            <div class="col-md-7 project-image">
                                 <div data-aos="fade-right" data-aos-anchor-placement="top-bottom">
                                     <video id="spotlight" autoplay muted loop class="spotlight-video">
                                         <source src="assets/videos/sonorancad/background.mp4" type="video/mp4">
@@ -241,7 +245,7 @@
                                     <div class="gap-hide"></div>
                                 </div>
                             </div>
-                            <div class="col-md-6 project-details">
+                            <div class="col-md-5 project-details">
                                 <p class="welcome-subheader">
                                     <a href="products/sonorancad" style="text-decoration: none;">Sonoran CAD</a>
                                 </p>
@@ -294,19 +298,17 @@
             </div>
         </footer>
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-        <script src="assets/javascript/script.js"></script>
-        <script src="assets/javascript/scroll.js"></script>
-        <script src="assets/javascript/aos.js"></script>
-    
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
             integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
             crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
             integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-            crossorigin="anonymous"></script>
+            crossorigin="anonymous"></script>    
+        <script src="assets/javascript/script.js"></script>
+        <script src="assets/javascript/scroll.js"></script>
+        <script src="assets/javascript/media_video.js"></script>
+        <script src="assets/javascript/aos.js"></script>
         <script>AOS.init({duration: "2000"});</script>
     </body>
 </html>

@@ -11,10 +11,6 @@
     src: url('../fonts/Glober/Glober\ Bold\ Free.otf');
 }
 
-html {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
-}
 
 html,body
 {
@@ -28,6 +24,30 @@ html,body
 body{
     overflow-x: hidden;
     background-color: #191919;
+}
+
+
+html {
+    --scrollbarBG: #242424;
+    --thumbBG: #90A4AE;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+::-webkit-scrollbar {
+    width: 11px;
+}
+body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
 }
 
 a {
@@ -111,6 +131,9 @@ nav-dark {
 @media screen and (max-width: 340px) {
     .centered{
        top: 60%; 
+    }
+    .centered-buttons{
+        top: 60%;
     }
 }
 
@@ -279,6 +302,7 @@ nav-dark {
     font-weight: bold;
     margin: 5px;
     color: #f3f3f3;
+    text-shadow: 5px 5px 5px black;
 }
 
 .technologies-grid {
@@ -288,19 +312,20 @@ nav-dark {
 }
 
 .technology {
-    width: 50%;
+    width: 22%;
     border:none;
-    background-color: transparent;
+    background-color: #262b30;
     background-image: 
     linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)),
     linear-gradient(90deg, rgba(52, 75, 107, 0), rgba(52, 75, 107, 1), rgba(52, 75, 107,0));
 
-    box-shadow: rgba(52, 75, 107,0.5) 0 0 12px;
+    box-shadow: rgba(52, 75, 107,0.7) 0 0 15px;
 
     background-repeat: no-repeat;
     background-position: 0 0, 0 1px;
     background-size: 100% 1px;
     border-radius: 8px;
+    padding: 0.7%;
 }
 
 .technology h2{
@@ -308,16 +333,21 @@ nav-dark {
     font-weight: bolder;
     margin: 5px;
     color: #f3f3f3;
+    text-shadow: 5px 5px 5px black;
 }
 
 .technology img{
-    width: 25%;
+    width: 60%;
 }
 
 @media screen and (max-width: 768px) {
     .technology{
         width: 100%;
         box-shadow: none;
+        margin-bottom: 2%;
+    }
+    .technology img{
+        width: 40%;
     }
 }
 
@@ -331,6 +361,77 @@ nav-dark {
     flex-flow: column wrap;
     justify-content: center;
 }
+
+.product-button {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 150px;
+    font-size: 15px;
+}
+
+.centered-buttons {
+    display: flex;
+    flex-flow: row wrap;
+    align-self: center;
+    justify-content: space-evenly;
+    height: 100px;
+    position: absolute;
+    width: 80vw;
+    bottom: 21%;
+}
+
+@media screen and (max-width: 1080px) {
+    .centered-buttons{
+        bottom: 20%;
+    }
+}
+
+@media screen and (max-width: 975px) {
+    .centered-buttons{
+        bottom: 14%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-cont{
+        height: 56.28vw;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .centered-buttons{
+        bottom: 11%;
+    }
+}
+
+@media screen and (max-width: 555px) {
+    .centered-buttons{
+        bottom: 8%;
+    }
+}
+
+@media screen and (max-width: 455px) {
+    .centered-buttons{
+        bottom: 6%;
+    }
+    .product-button{
+        font-size: 12px;
+        width: 110px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .centered-buttons{
+        bottom: 0;
+        top: 60%;
+    }
+}
+
+@media screen and (max-width: 555px) {
+    .centered-buttons{
+        top: 48%;
+    }
+}
+
 
 .product-overview {
     width: 55%;
@@ -360,27 +461,37 @@ nav-dark {
     justify-content: center;
 }
 
+.fade-button-row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
 .align-button {
     margin-left: 5px;
 }
 
+.fade-align-button{
+    margin-left: 20px;
+}
+
 .modal-body input, textarea{
-    background-color: #1e2225;
+    background-color: #46484b;
     color: #f3f3f3;
 }
 
 .contact-form-label textarea{
-    background-color: #1e2225;
+    background-color: #46484b;
     color: #f3f3f3;
 }
 
 .modal-body input:focus, textarea:focus{
-    background-color: #1e2225;
+    background-color: #46484b;
     color: #f3f3f3;
 }
 
 .contact-form-label textarea:focus{
-    background-color: #1e2225;
+    background-color: #46484b;
     color: #f3f3f3;
 }
 
@@ -396,11 +507,6 @@ nav-dark {
         margin-left: 3px;
         margin-top: 1px;
     }
-}
-
-.product-button {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 125px;
 }
 
 @media screen and (max-width: 478px) {
@@ -441,6 +547,15 @@ nav-dark {
     font-weight: bold;
 }
 
+.main-cont {
+    position: relative;
+    height: 56.25vw;
+    margin-bottom: -48px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+}
+
 .bg-image {
     background-image: url("https://www.tsico.com/wp-content/uploads/2017/07/GettyImages-629285904.jpg");
   
@@ -468,7 +583,7 @@ nav-dark {
     margin-bottom: -8px;
     object-fit: cover;
     object-position: 50% 0;
-    width: 100%;
+    width: 100vw;
     max-height: 110vh;
     box-shadow: 0 0 25px black;
   }
@@ -2141,7 +2256,8 @@ li.right-it {
     flex-flow: row wrap;
     justify-content: center;
     align-self: center;
-    width: 65%;
+    width: 75%;
+    margin-top: 3%;
 }
 
 @media screen and (max-width: 768px) {
