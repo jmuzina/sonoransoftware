@@ -390,22 +390,22 @@ nav-dark {
 }
 
 .modal-body input, textarea{
-    background-color: #1e2225;
+    background-color: #46484b;
     color: #f3f3f3;
 }
 
 .contact-form-label textarea{
-    background-color: #1e2225;
+    background-color: #46484b;
     color: #f3f3f3;
 }
 
 .modal-body input:focus, textarea:focus{
-    background-color: #1e2225;
+    background-color: #46484b;
     color: #f3f3f3;
 }
 
 .contact-form-label textarea:focus{
-    background-color: #1e2225;
+    background-color: #46484b;
     color: #f3f3f3;
 }
 
@@ -483,7 +483,7 @@ nav-dark {
   .gap-hide{
     width: 104.6%;
     height: 25px;
-    background-color: #3b4046;
+    background-color: #343a40;
     margin-top: -19px;
     margin-left: -13px;
     position: absolute;
@@ -2166,7 +2166,8 @@ li.right-it {
     flex-flow: row wrap;
     justify-content: center;
     align-self: center;
-    width: 65%;
+    width: 75%;
+    margin-top: 3%;
 }
 
 @media screen and (max-width: 768px) {
