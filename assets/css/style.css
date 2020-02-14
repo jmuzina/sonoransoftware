@@ -27,6 +27,7 @@ html,body
 
 body{
     overflow-x: hidden;
+    background-color: #191919;
 }
 
 a {
@@ -378,8 +379,6 @@ nav-dark {
 }
 
 .product-button {
-    background-color: #0071ce;
-    color: #f3f3f3;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     width: 125px;
 }

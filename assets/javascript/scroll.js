@@ -2,7 +2,7 @@ var fileName = location.href.split("/").slice(-1);
 
 function video_replace() {
     if (fileName == "") {
-        $("video.main-video").replaceWith("<img class='main-mobile-image' src='assets/images/main_mobile.png'></img>");
+        $("video.main-video").replaceWith("<img class='main-mobile-image' src='assets/images/logos/main_mobile.png'></img>");
         $("video.spotlight-video").replaceWith("<img class='spotlight-mobile-image' src='assets/images/sonorancad/video-still.png'></img>");
     }
     else if (fileName == "sonorancad") {
@@ -43,6 +43,6 @@ $(window).resize(function() {
         }
     }
     else if (fileName == "" || filename == "sonorancad") {
-        $(".navbar-brand").replaceWith("<a class='navbar-brand logo' href='./' style='margin-right:7%; margin-left:2%;'><img src='./assets/images/logo_blue_white.png' alt=''> </a>");
+        $(".navbar-brand").replaceWith("<a class='navbar-brand logo' href='./' style='margin-right:7%; margin-left:2%;'><img src='./assets/images/logos/logo_blue_white.png' alt=''> </a>");
     }
   });
