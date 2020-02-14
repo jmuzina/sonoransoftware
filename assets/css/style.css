@@ -132,6 +132,9 @@ nav-dark {
     .centered{
        top: 60%; 
     }
+    .centered-buttons{
+        top: 60%;
+    }
 }
 
 .welcome-container{
@@ -299,6 +302,7 @@ nav-dark {
     font-weight: bold;
     margin: 5px;
     color: #f3f3f3;
+    text-shadow: 5px 5px 5px black;
 }
 
 .technologies-grid {
@@ -329,6 +333,7 @@ nav-dark {
     font-weight: bolder;
     margin: 5px;
     color: #f3f3f3;
+    text-shadow: 5px 5px 5px black;
 }
 
 .technology img{
@@ -356,6 +361,77 @@ nav-dark {
     flex-flow: column wrap;
     justify-content: center;
 }
+
+.product-button {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 150px;
+    font-size: 15px;
+}
+
+.centered-buttons {
+    display: flex;
+    flex-flow: row wrap;
+    align-self: center;
+    justify-content: space-evenly;
+    height: 100px;
+    position: absolute;
+    width: 80vw;
+    bottom: 21%;
+}
+
+@media screen and (max-width: 1080px) {
+    .centered-buttons{
+        bottom: 20%;
+    }
+}
+
+@media screen and (max-width: 975px) {
+    .centered-buttons{
+        bottom: 14%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-cont{
+        height: 56.28vw;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .centered-buttons{
+        bottom: 11%;
+    }
+}
+
+@media screen and (max-width: 555px) {
+    .centered-buttons{
+        bottom: 8%;
+    }
+}
+
+@media screen and (max-width: 455px) {
+    .centered-buttons{
+        bottom: 6%;
+    }
+    .product-button{
+        font-size: 12px;
+        width: 110px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .centered-buttons{
+        bottom: 0;
+        top: 60%;
+    }
+}
+
+@media screen and (max-width: 555px) {
+    .centered-buttons{
+        top: 48%;
+    }
+}
+
 
 .product-overview {
     width: 55%;
@@ -385,8 +461,18 @@ nav-dark {
     justify-content: center;
 }
 
+.fade-button-row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
 .align-button {
     margin-left: 5px;
+}
+
+.fade-align-button{
+    margin-left: 20px;
 }
 
 .modal-body input, textarea{
@@ -421,11 +507,6 @@ nav-dark {
         margin-left: 3px;
         margin-top: 1px;
     }
-}
-
-.product-button {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 125px;
 }
 
 @media screen and (max-width: 478px) {
@@ -466,6 +547,15 @@ nav-dark {
     font-weight: bold;
 }
 
+.main-cont {
+    position: relative;
+    height: 56.25vw;
+    margin-bottom: -48px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+}
+
 .bg-image {
     background-image: url("https://www.tsico.com/wp-content/uploads/2017/07/GettyImages-629285904.jpg");
   
@@ -493,7 +583,7 @@ nav-dark {
     margin-bottom: -8px;
     object-fit: cover;
     object-position: 50% 0;
-    width: 100%;
+    width: 100vw;
     max-height: 110vh;
     box-shadow: 0 0 25px black;
   }
