@@ -3,7 +3,7 @@ var fileName = location.href.split("/").slice(-1);
 function video_replace() {
     if (fileName == "") {
         $("video.main-video").replaceWith("<img class='main-mobile-image' src='assets/images/logos/main_mobile.png'></img>");
-        $("#button-fade").fadeIn();
+        //$("#button-fade").fadeIn();
         $("video.spotlight-video").replaceWith("<img class='spotlight-mobile-image' src='assets/images/sonorancad/video-still.png'></img>");
     }
     else if (fileName == "sonorancad") {

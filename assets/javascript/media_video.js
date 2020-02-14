@@ -1,4 +1,6 @@
 $('#video video').bind('ended', function(){
     console.log("video ended");
-    $("#button-fade").fadeIn();
+    if ($(window).width() > 768) {
+        $("#button-fade").fadeIn();
+    }
 });
