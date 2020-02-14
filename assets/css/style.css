@@ -222,7 +222,6 @@ nav-dark {
     flex-flow: column wrap;
     justify-content: center;
     align-content: center;
-    background-color: #cbcbcb;
     padding-bottom: 10px;
     margin-top: 8px;
 }
@@ -278,6 +277,47 @@ nav-dark {
     font-size: 30px !important;
     font-weight: bold;
     margin: 5px;
+    color: #f3f3f3;
+}
+
+.technologies-grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.technology {
+    width: 50%;
+    border:none;
+    background-color: transparent;
+    background-image: 
+    linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)),
+    linear-gradient(90deg, rgba(52, 75, 107, 0), rgba(52, 75, 107, 1), rgba(52, 75, 107,0));
+
+    box-shadow: rgba(52, 75, 107,0.5) 0 0 12px;
+
+    background-repeat: no-repeat;
+    background-position: 0 0, 0 1px;
+    background-size: 100% 1px;
+    border-radius: 8px;
+}
+
+.technology h2{
+    font-size: 22px !important;
+    font-weight: bolder;
+    margin: 5px;
+    color: #f3f3f3;
+}
+
+.technology img{
+    width: 25%;
+}
+
+@media screen and (max-width: 768px) {
+    .technology{
+        width: 100%;
+        box-shadow: none;
+    }
 }
 
 .product-heading {
@@ -364,6 +404,7 @@ nav-dark {
     font-size:16px;
     text-align: center;
     font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    color: #f3f3f3;
 }
 
 .feature-text {
@@ -394,13 +435,22 @@ nav-dark {
     background-repeat: no-repeat;
     background-size: cover;
   }
+  
+  .gap-hide{
+    width: 104.6%;
+    height: 25px;
+    background-color: #343a40;
+    margin-top: -19px;
+    margin-left: -13px;
+    position: absolute;
+  }
 
   .main-video{
     margin-bottom: -8px;
     object-fit: cover;
     object-position: 50% 0;
-    width: 100vw;
-    height: 110vh;
+    width: 100%;
+    max-height: 110vh;
     box-shadow: 0 0 25px black;
   }
   .main-mobile-image{
@@ -408,6 +458,17 @@ nav-dark {
     object-fit: fill;
     object-position: 50% 0;
     max-width: 100vw;
+  }
+  .spotlight-video{
+    width: 100%;
+    box-shadow: 0 0 10px black;
+    object-position: 0px -14px;
+
+  }
+  .spotlight-mobile-image{
+    width: 100%;
+    box-shadow: 0 0 10px black;
+    object-position: 0px -14px;
   }
 
   .bg-video {
@@ -576,6 +637,9 @@ nav-dark {
     .about-text{
         font-size:16px;
     }
+    .technology h2{
+        font-size: 19px;
+    }
 }
 
 @media screen and (min-width:673px) and (max-width:845px) {
@@ -605,6 +669,9 @@ nav-dark {
     }
     .about-text{
         font-size:14px;
+    }
+    .technology h2{
+        font-size: 17px;
     }
 }
 
@@ -648,6 +715,9 @@ nav-dark {
     .about-text{
         font-size:13px;
     }
+    .technology h2{
+        font-size: 15px;
+    }
 }
 
 @media screen and (min-width:570px) and (max-width:638px) {
@@ -677,6 +747,9 @@ nav-dark {
     }
     .about-text{
         font-size:12px;
+    }
+    .technology h2{
+        font-size: 14px;
     }
 }
 
@@ -710,6 +783,9 @@ nav-dark {
     }
     .about-text{
         font-size:12px;
+    }
+    .technology h2{
+        font-size: 14px;
     }
 }
 
@@ -1746,8 +1822,8 @@ nav {
 }
 
 .change-nav-main.scrolled {
-    background-color: #030b16;
-    color: #030b16;
+    background-color: #272a2e;
+    color: #272a2e;
     transition: background-color 400ms linear;
 }
 
@@ -2013,6 +2089,31 @@ li.right-it {
     color: #191919;
     font-size: 15px;
     cursor: pointer;
+}
+
+.team-carousel{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-self: center;
+    width: 65%;
+}
+
+@media screen and (max-width: 768px) {
+    .team-carousel{
+        width: 95%;
+    }
+}
+
+.team-carousel img{
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.team-text{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
 }
 
 .company-info-button:hover {
@@ -2361,6 +2462,12 @@ li.right-it {
 
 .nav-col{
     background-color:#e7e7e7;
+}
+
+@media screen and (max-width: 991px) {
+    .navbar-collapse{
+        background-color: #272a2e;
+    }
 }
 
 @media screen and (min-width:928px){

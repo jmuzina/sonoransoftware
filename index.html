@@ -31,7 +31,7 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse nav-bg nav-custom-links navbar-dark bg-dark" id="navbarSupportedContent" style="border-radius: 12px; padding: 5px;">
+                    <div class="collapse navbar-collapse nav-bg nav-custom-links navbar-dark" id="navbarSupportedContent" style="border-radius: 12px; padding: 5px;">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
                                 <a class="nav-link" href="./">Home <span class="sr-only">(current)</span></a>
@@ -105,7 +105,7 @@
             </div>
         </div>
         <div class="container-fluid" style="padding-left:0; padding-right:0;">
-            <video autoplay muted loop class="main-video" id="myVideo" style="margin-top:-49px;">
+            <video id = "main" autoplay muted class="main-video" style="margin-top:-49px;">
                 <source src="assets/videos/logo_intro_cut.mp4" type="video/mp4">
             </video>
             <div class="centered">
@@ -129,61 +129,131 @@
                 </div>
             </div>
         </div>
-        <div class="main">
-            <div style = "background-color: #e7e7e7;">
-                    <div class = "container-fluid">
-                        <div class="container">
-                            <div class="row">
-                                <div class = "col-md-6 align-self-center">
-                                    <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" class="company-info-image">
-                                        <img src="./assets/images/logo2.png" height = "auto" alt="">
-                                    </div>
-                                </div>
-                                <div class = "col-md-6">
-                                    <div data-aos="fade" data-aos-anchor-placement="top-bottom" class="company-info-text-2", style = "padding-top: 2%;">
-                                        <p class="about-headings">
-                                            Our Technology
-                                        </p>
-                                        <p class="about-text">
-                                            We use the latest development tools available to ensure a fully responsive, efficient and innovative design. Our highly optimized deployments ensure high availability, low overhead and an immersive user experience.
-                                        </p>
-                                        <p class="about-headings">
-                                            Our Team
-                                        </p>
-                                        <p class="about-text">
-                                            Our team of dedicated professionals takes a personalized approach to every project. We take pride in ensuring quality, innovative solutions and an exceptional customer experience.
-                                        </p>
-                                        <a href="./about"><button class="button"><span>Learn more</span></button></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="row project-spotlight" data-aos="fade" data-aos-anchor-placement="top-bottom">
-                            <p class="about-headings" style="align-self: center; padding: 10px 0px 10px 0px">
-                                Product Spotlight
+        <div class="main" style = "background-color: #343a40;">
+            <div class = "container-fluid">
+                <div class="row">   
+                    <div class="company-info-text-2", style = "padding-top: 2%;">
+                        <div>
+                            <p class="about-headings">
+                                Our Technology
                             </p>
-                            <div class="container">
-                                <div class="row spotlight-row">
-                                    <div class="col-md-6 project-image">
-                                        <div data-aos="fade-right" data-aos-anchor-placement="top-bottom">
-                                            <a href="assets/images/full_dispatch.PNG"><img src="./assets/images/full_dispatch.PNG" height = "auto"></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 project-details">
-                                        <p class="welcome-subheader">
-                                            <a href="products/sonorancad" style="text-decoration: none;">Sonoran CAD</a>
-                                        </p>
-                                        <p class="about-text">
-                                            Sonoran CAD is a state of the art, cross-platform, computer automated dispatching and records management system for gaming communities. Sonoran CAD comes complete with real time connections, in-depth customization, voice commands, in-game integration, Discord WebHook notifications and more!
-                                        </p>
-                                        <a href="./products/sonorancad"><button class="button"><span>Learn more</span></button></a>
-                                    </div>
-                                </div>
+                            <p class="about-text">
+                                To ensure an exceptional user experience, Sonoran Software Systems relies upon the industry’s latest technology frameworks. Take a look at some of the tools utilized in our technology stack.
+                            </p>
+                        </div>
+                       
+                        <div class="technologies-grid">
+                            <div class="technology" data-aos="fade" data-aos-anchor-placement="top-bottom">
+                                <h2>.Net Core</h2>
+                                <img src="assets/images/home/dotnet_core.png" alt="">
+                                <p class="about-text">
+                                    Our backend API servers rely on the latest open-source, cross-platform, .Net Core framework from Microsoft.
+                                </p>
+                                <p class="about-text">
+                                    With .Net Core, we can easily scale and replicate nodes across the world to meet consumer demands.
+                                </p>
+                            </div>
+                            <div class="technology" data-aos="fade" data-aos-anchor-placement="top-bottom">
+                                <h2>SignalR</h2>
+                                <img src="assets/images/home/signalr.png" alt="">
+                                <p class="about-text">
+                                    SignalR brings our applications to life with real-time client-server communication.
+                                </p>
+                                <p class="about-text">
+                                    This open-source, open-protocol communication framework ensures proper authentication and scalability for an exceptional user experience.
+                                </p>
+                            </div>
+                            <div class="technology" data-aos="fade" data-aos-anchor-placement="top-bottom">
+                                <h2>Vue JS</h2>
+                                <img src="assets/images/home/vue_js.png" class="mt-3" alt="">
+                                <p class="about-text">
+                                    Vue JS is a performance based reusable UI component framework.
+                                </p>
+                                <p class="about-text">
+                                    Sonoran Software Systems specializes in building fully responsive UI components that look great on any platform.
+                                </p>
+                            </div>
+                            <div class="technology" data-aos="fade" data-aos-anchor-placement="top-bottom">
+                                <h2>Quasar</h2>
+                                <img src="assets/images/home/quasar.png" class="mt-3" alt="">
+                                <p class="about-text mt-4">
+                                    The Quasar framework allows for rapid, cross-platform deployments to all major platforms.
+                                </p>
+                                <p class="about-text">
+                                    Whether we’re deploying to iOS, Android, OSX, Windows, or a web application, Quasar ensures simultaneous deployments with a single user interface.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="row company-info-text-2 mt-4" data-aos="fade" data-aos-anchor-placement="top-bottom">
+                    <div class="col-md-6 team-text">
+                        <p class="about-headings">
+                            Our Team
+                        </p>
+                        <p class="about-text">
+                            Our team of dedicated professionals takes a personalized approach to every project. We take pride in ensuring quality, innovative solutions and an exceptional customer experience.
+                        </p>
+                        <a href="./about"><button class="btn btn-outline-light"><span>Learn more</span></button></a>
+                    </div>
+                    <div class="col-md-6 team-text">
+                        <div class="team-carousel">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img class="d-block w-100" src="assets/images/sosnowski.png" alt="Brian Sosnowski">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-block w-100" src="assets/images/benson.png" alt="Thomas Benson">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-block w-100" src="assets/images/muzina_resized.jpg" alt="Joe Muzina">
+                                  </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row project-spotlight" data-aos="fade" data-aos-anchor-placement="top-bottom">
+                    <p class="about-headings" style="align-self: center; padding: 10px 0px 10px 0px">
+                        Product Spotlight
+                    </p>
+                    <div class="container">
+                        <div class="row spotlight-row">
+                            <div class="col-md-6 project-image">
+                                <div data-aos="fade-right" data-aos-anchor-placement="top-bottom">
+                                    <video id="spotlight" autoplay muted loop class="spotlight-video">
+                                        <source src="assets/videos/sonorancad/background.mp4" type="video/mp4">
+                                    </video>
+                                    <div class="gap-hide"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 project-details">
+                                <p class="welcome-subheader">
+                                    <a href="products/sonorancad" style="text-decoration: none;">Sonoran CAD</a>
+                                </p>
+                                <p class="about-text">
+                                    Sonoran CAD is a state of the art, cross-platform, computer automated dispatching and records management system for gaming communities. Sonoran CAD comes complete with real time connections, in-depth customization, voice commands, in-game integration, Discord WebHook notifications and more!
+                                </p>
+                                <a href="./products/sonorancad"><button class="btn btn-outline-light"><span>Learn more</span></button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <footer style = "background-color: #191919; position: relative; height: auto;">    
