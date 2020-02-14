@@ -31,7 +31,7 @@ function add_logo(tag) {
 window.addEventListener('scroll', function(e) {
     last_known_scroll_position = window.scrollY;
     if (fileName == "") {
-        scroll_limit = $("#vid-container").height();
+        scroll_limit = $("#vid-container").height() - 120;
     }
     else if (fileName == "sonorancad") {
         scroll_limit = $("#sonoran_video").height();
