@@ -21,7 +21,6 @@ window.addEventListener('scroll', function(e) {
         base_class = ".change-nav";
     }
     if ((last_known_scroll_position > scroll_limit) && (!$(base_class).hasClass("scrolled"))) {
-        
         $(base_class).addClass("scrolled");
     } else if ((last_known_scroll_position <= scroll_limit) && ($(base_class).hasClass("scrolled"))) {
         $(base_class).removeClass("scrolled");
@@ -29,7 +28,7 @@ window.addEventListener('scroll', function(e) {
 });
 
 $("video").ready(function () {
-    if ($(window).width() < 768) {
+    if (($(window).width() < 768) && (fileName == "about" || fileName == "")) {
         video_replace();
         $(".navbar-brand").replaceWith("<a class='navbar-brand logo' href='./' style='margin-right:7%; margin-left:2%;'></a>");
     }

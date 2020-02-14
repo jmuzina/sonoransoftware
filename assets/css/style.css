@@ -1890,10 +1890,6 @@ nav {
     .nav-shadow {
         text-shadow: 0 0 0;
     }
-    .change-nav {
-        background-color: #272a2e;
-        color: #272a2e;
-    }
 }
 
 .transparent-drop {
