@@ -344,6 +344,16 @@ nav-dark {
     width: 60%;
 }
 
+@media screen and (max-width: 992px) {
+    .technology{
+        width: 45%;
+        margin-bottom: 2%;
+    }
+    .technology img{
+        width: 40%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .technology{
         width: 100%;
@@ -559,6 +569,12 @@ nav-dark {
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+    .main-cont{
+        height: 77.73462783171521vw;
+    }
 }
 
 .bg-image {
