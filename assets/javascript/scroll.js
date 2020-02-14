@@ -29,7 +29,7 @@ window.addEventListener('scroll', function(e) {
 });
 
 $("video").ready(function () {
-    if ($(window).width() < 768) { // viewing on a phone
+    if ($(window).width() < 768) {
         video_replace();
         $(".navbar-brand").replaceWith("<a class='navbar-brand logo' href='./' style='margin-right:7%; margin-left:2%;'></a>");
     }
@@ -38,9 +38,11 @@ $("video").ready(function () {
 $(window).resize(function() {
     if ($(window).width() < 768) { // viewing on a phone
         video_replace();
-        $(".navbar-brand").replaceWith("<a class='navbar-brand logo' href='./' style='margin-right:7%; margin-left:2%;'></a>");
+        if (fileName == "" || filename == "sonorancad") {
+            $(".navbar-brand").replaceWith("<a class='navbar-brand logo' href='./' style='margin-right:7%; margin-left:2%;'></a>");
+        }
     }
-    else {
+    else if (fileName == "" || filename == "sonorancad") {
         $(".navbar-brand").replaceWith("<a class='navbar-brand logo' href='./' style='margin-right:7%; margin-left:2%;'><img src='./assets/images/logo_blue_white.png' alt=''> </a>");
     }
   });

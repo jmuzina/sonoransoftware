@@ -1644,11 +1644,13 @@ input[name="r"] {
     padding: 15px;
     font-size: 38px !important;
     font-weight: bold;
+    color: #f3f3f3;
 }
 
 .team-text {
     text-align: center;
     padding-bottom: 15px;
+    color: #f3f3f3;
 }
 
 .flexmebox {
@@ -1666,6 +1668,15 @@ input[name="r"] {
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     height: 480px;
+    background-color: #3a3c3f;
+}
+
+.card-container h2, p {
+    color: #f3f3f3;
+}
+
+.card-container h2{
+    font-size: 1.7rem;
 }
 
 @media screen and (max-width: 1200px) {
