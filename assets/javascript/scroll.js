@@ -3,16 +3,26 @@ var fileName = location.href.split("/").slice(-1);
 function video_replace() {
     if (fileName == "") {
         $("video.main-video").replaceWith("<img class='main-mobile-image' src='assets/images/logos/main_mobile.png'></img>");
+        $("#button-fade").fadeIn();
         $("video.spotlight-video").replaceWith("<img class='spotlight-mobile-image' src='assets/images/sonorancad/video-still.png'></img>");
     }
     else if (fileName == "sonorancad") {
-        $("video").replaceWith("<img class='bg-mobile-image' src='../assets/images/sonorancad/video-still.png'></img>");
+        $("video").replaceWith("<img class='bg-mobile-image' id='sonoran_video' src='../assets/images/sonorancad/video-still.png'></img>");
     }
 };
 
 window.addEventListener('scroll', function(e) {
     last_known_scroll_position = window.scrollY;
-    let scroll_limit = $(window).height() * 0.45;
+    if (fileName == "") {
+        scroll_limit = $("#vid-container").height();
+    }
+    else if (fileName == "sonorancad") {
+        scroll_limit = $("#sonoran_video").height();
+    }
+    else {
+        scroll_limit = $(window).height()*.5;
+    }
+    
     var base_class;
     if (fileName == "") {
         base_class = ".change-nav-main";
