@@ -25,29 +25,29 @@
     <!-- Navbar Start -->
     <header>
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #e7e7e7;">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="border-bottom: 0; background-color: #272a2e;">
                 <a class="navbar-brand logo" href="./" style="margin-right:7%; margin-left:2%;">
-                    <img src="./assets/images/logo2.png" alt=""> 
+                    <img src="./assets/images/logos/logo_blue_white.png" alt=""> 
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse nav-bg nav-custom-links" id="navbarSupportedContent" style="border-radius: 12px; padding: 5px;">
+                <div class="collapse navbar-collapse nav-bg nav-custom-links navbar-dark" id="navbarSupportedContent" style="border-radius: 12px; padding: 5px;">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
                             <a class="nav-link" href="./">Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="./about">About</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item active dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Products</a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="./products/sonorancad">SonoranCAD</a>
                             </div>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" data-toggle="modal" data-target="#contactModal" style="cursor:pointer;">Contact</a>
                         </li>
                     </ul>
@@ -57,7 +57,7 @@
     </header>
     <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
         <div class="contactModal modal-dialog" role="document">
-            <div class="modal-content" style="background-color:#e7e7e7;">
+            <div class="modal-content" style="background-color:#343a40;">
                 <form action="contact.php" method="post">
                     <div class="modal-header">
                     <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
@@ -65,8 +65,8 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                     </div>
-                    <div class="modal-body">
-                        <div class="contact-form">
+                    <div class="modal-body secondary">
+                        <div class="contact-form secondary">
                             <div class="container">
                                 <div class="form-row">
                                     <div class="col-md-5">
@@ -98,21 +98,21 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-primary">Send</button>
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-outline-primary">Send</button>
+                        <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-    <div class="main">
+    <div class="main" style = "background-color: #343a40;">
         <!-- About Us Area Start -->
-        <div class="about-us" style="background-color:#dbdbdb;">
+        <div class="about-us" style="background-color:#343a40;">
             <div class = "container">
                 <div class="row about-row">
                     <div class = "col-md-6 align-self-center">
                         <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" class="company-info-image">
-                            <img src="./assets/images/logo2.png" height = "auto" alt="">
+                            <img src="./assets/images/logos/logo_blue_white.png" height = "auto" alt="">
                         </div>
                     </div>
                     <div class = "col-md-6">
@@ -134,7 +134,7 @@
                 </div>
             </div>
         </div>
-        <div class="team-members">
+        <div class="team-members secondary">
                 <div class="container">
                     <h1 class="team-title">Our Team</h1>
                     <p class="team-text">
@@ -143,7 +143,7 @@
                     <div class="row" data-aos="fade">
                         <div class="column">
                             <div class="card">
-                                <img class="card-image" src="./assets/images/sosnowski.png" alt="">
+                                <img class="card-image" src="./assets/images/team/sosnowski.png" alt="">
                                 <div class="card-container">
                                     <h2>Brian Sosnowski</h2>
                                     <p class="title">Founder & Lead Developer</p>
@@ -152,13 +152,13 @@
                                         <a href="https://www.linkedin.com/in/brian-sosnowski-619b32178/" class="icon"><i class="fab fa-linkedin-in"></i></a>
                                         <a href="mailto: brian@sonoransoftware.com" class="icon"><i class="fas fa-envelope"></i></a>
                                     </p>
-                                    <p><a href="./team/brian" class="card-button">Learn More</a></p>
+                                    <p><a href="./team/brian" class="btn btn-outline-light w-100 mb-3">Learn More</a></p>
                                 </div>
                             </div>
                         </div>
                         <div class="column">
                             <div class="card">
-                                <img class="card-image" src="./assets/images/benson.png" alt="">
+                                <img class="card-image" src="./assets/images/team/benson.png" alt="">
                                 <div class="card-container">
                                     <h2>Thomas Benson</h2>
                                     <p class="title">Financial Manager</p>
@@ -167,13 +167,13 @@
                                         <a href="https://www.linkedin.com/in/thomas-benson/" class="icon"><i class="fab fa-linkedin-in"></i></a>
                                         <a href="mailto: thomas@sonoransoftware.com" class="icon"><i class="fas fa-envelope"></i></a>
                                     </p>
-                                    <p><a href="./team/thomas" class="card-button">Learn More</a></p>
+                                    <p><a href="./team/thomas" class="btn btn-outline-light w-100 mb-3">Learn More</a></p>
                                 </div>
                             </div>
                         </div>
                         <div class="column">
                             <div class="card">
-                                <img class="card-image" src="./assets/images/personlogo.png" alt="">
+                                <img class="card-image" src="./assets/images/team/personlogo.png" alt="">
                                 <div class="card-container">
                                     <h2>Zack Sanchez</h2>
                                     <p class="title">General Manager</p>
@@ -181,13 +181,13 @@
                                     <p class="card-icons">
                                         <a href="mailto: zack@sonoransoftware.com" class="icon"><i class="fas fa-envelope"></i></a>
                                     </p>
-                                    <a href="./team/zack" class="card-button">Learn More</a>
+                                    <a href="./team/zack" class="btn btn-outline-light w-100 mb-3">Learn More</a>
                                 </div>
                             </div>
                         </div>
                         <div class="column">
                             <div class="card">
-                                <img class="card-image" src="./assets/images/muzina_resized.jpg" alt="">
+                                <img class="card-image" src="./assets/images/team/muzina_resized.jpg" alt="">
                                 <div class="card-container">
                                     <h2>Joe Muzina</h2>
                                     <p class="title">Web Developer</p>
@@ -196,7 +196,7 @@
                                         <a href="https://www.linkedin.com/in/joe-muzina-7b0603164/" class="icon"><i class="fab fa-linkedin-in"></i></a>
                                         <a href="mailto:joe@sonoransoftware.com" class="icon"><i class="fas fa-envelope"></i></a>
                                     </p>
-                                    <p><a href="./team/joe" class="card-button">Learn More</a></p>
+                                    <p><a href="./team/joe" class="btn btn-outline-light w-100 mb-3">Learn More</a></p>
                                 </div>
                             </div>
                         </div>
@@ -242,11 +242,17 @@
         </div>
     </footer>
 
-    <script src="assets/javascript/script.js"></script>
-    <script src="assets/javascript/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="assets/javascript/script.js"></script>
+    <script src="assets/javascript/scroll.js"></script>
+    <script src="assets/javascript/aos.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
     <script>AOS.init({duration: "2000"});</script>
 </body>
 </html>

@@ -27,6 +27,7 @@ html,body
 
 body{
     overflow-x: hidden;
+    background-color: #191919;
 }
 
 a {
@@ -363,6 +364,26 @@ nav-dark {
     margin-left: 5px;
 }
 
+.modal-body input, textarea{
+    background-color: #1e2225;
+    color: #f3f3f3;
+}
+
+.contact-form-label textarea{
+    background-color: #1e2225;
+    color: #f3f3f3;
+}
+
+.modal-body input:focus, textarea:focus{
+    background-color: #1e2225;
+    color: #f3f3f3;
+}
+
+.contact-form-label textarea:focus{
+    background-color: #1e2225;
+    color: #f3f3f3;
+}
+
 @media screen and (min-width: 375px) and (max-width: 385px) {
     .align-button {
         margin-left: 4px;
@@ -378,8 +399,6 @@ nav-dark {
 }
 
 .product-button {
-    background-color: #0071ce;
-    color: #f3f3f3;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     width: 125px;
 }
@@ -1214,8 +1233,6 @@ textarea {
 
 .team-member-treeee {
     width: 100%;
-    /*height: 290px;*/
-    background-color: #e7e7e7;
     display: flex;
     text-align: center;
 }
@@ -1337,6 +1354,27 @@ textarea {
 
 .team-member-text-main h1 {
     display:flex;
+    color: #f3f3f3;
+}
+
+.team-member-text-main h5 {
+    color: #f3f3f3;
+}
+
+.education li {
+    color: #f3f3f3;
+}
+
+.skills li {
+    color: #f3f3f3;
+}
+
+.interests li {
+    color: #f3f3f3;
+}
+
+.quote h3, h5{
+    color: #f3f3f3;
 }
 
 @media screen and (max-width: 478px) {
@@ -1644,11 +1682,13 @@ input[name="r"] {
     padding: 15px;
     font-size: 38px !important;
     font-weight: bold;
+    color: #f3f3f3;
 }
 
 .team-text {
     text-align: center;
     padding-bottom: 15px;
+    color: #f3f3f3;
 }
 
 .flexmebox {
@@ -1666,6 +1706,15 @@ input[name="r"] {
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     height: 480px;
+    background-color: #3a3c3f;
+}
+
+.card-container h2, p {
+    color: #f3f3f3;
+}
+
+.card-container h2{
+    font-size: 1.7rem;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1840,10 +1889,6 @@ nav {
     }
     .nav-shadow {
         text-shadow: 0 0 0;
-    }
-    .change-nav {
-        background-color: #272a2e;
-        color: #272a2e;
     }
 }
 

@@ -50,8 +50,8 @@
                     </p>
                 </div>
                 <div class="row button-row mt-3">
-                    <button type="button" class="btn product-button" onClick="document.getElementById('features').scrollIntoView();">Learn More</button>
-                    <button type="button" class="btn product-button align-button" onClick="document.getElementById('register').scrollIntoView();" id = "features">Register Now</button>
+                    <button type="button" class="btn btn-outline-light product-button" onClick="document.getElementById('features').scrollIntoView();">Learn More</button>
+                    <button type="button" class="btn btn-outline-light product-button align-button" onClick="document.getElementById('register').scrollIntoView();" id = "features">Register Now</button>
                 </div>
                 
             </div>
@@ -63,7 +63,7 @@
         <div class="container">
             <nav class="navbar nav-noborder navbar-dark navbar-expand-lg fixed-top change-nav">
                 <a class="navbar-brand logo" href="./../" style="margin-right:7%; margin-left:2%;">
-                    <img src="../assets/images/logo_blue_white.png" alt="">
+                    <img src="../assets/images/logos/logo_blue_white.png" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -99,61 +99,51 @@
             </nav>
         </div>
     </header>
-    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel"
-        aria-hidden="true">
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
         <div class="contactModal modal-dialog" role="document">
-            <div class="modal-content" style="background-color:#e7e7e7;">
-                <form action="../contact.php" method="post">
+            <div class="modal-content" style="background-color:#343a40;">
+                <form action="contact.php" method="post">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                    <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                     </div>
-                    <div class="modal-body">
-                        <div class="contact-form">
+                    <div class="modal-body secondary">
+                        <div class="contact-form secondary">
                             <div class="container">
                                 <div class="form-row">
                                     <div class="col-md-5">
                                         <label class="contact-form-label">
-                                            <input type="text" name="name"
-                                                class="contact-form-input form-name form-control" placeholder="Name"
-                                                required style="border-radius:6px;">
+                                            <input type="text" name="name" class="contact-form-input form-name form-control" placeholder="Name" required style="border-radius:6px;">
                                         </label>
                                     </div>
                                     <div class="col-md-7">
                                         <label class="contact-form-label">
-                                            <input type="email" name="from"
-                                                class="contact-form-input form-email form-control" placeholder="Email"
-                                                required style="border-radius:6px;">
-                                        </label>
+                                            <input type="email" name="from" class="contact-form-input form-email form-control" placeholder="Email" required style="border-radius:6px;">
+                                        </label> 
                                     </div>
                                 </div>
                                 <div class="form-row mt-2">
                                     <div class="col-md-12">
                                         <label class="contact-form-label">
-                                            <input type="text" name="subject"
-                                                class="contact-form-input form-subject form-control"
-                                                placeholder="Subject" required style="border-radius:6px;">
+                                            <input type="text" name="subject" class="contact-form-input form-subject form-control" placeholder="Subject" required style="border-radius:6px;">
                                         </label>
-                                    </div>
+                                    </div> 
                                 </div>
                                 <div class="form-row mt-2">
                                     <div class="col-md-12">
                                         <label class="contact-form-label">
-                                            <textarea name="message"
-                                                class="contact-form-input form-message form-control"
-                                                style="height: 150px;" placeholder="Message" required
-                                                style="border-radius:6px;"></textarea>
+                                            <textarea name="message" class="contact-form-input form-message form-control" style="height: 150px;" placeholder="Message" required style="border-radius:6px;"></textarea>
                                         </label>
-                                    </div>
+                                    </div>   
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-primary">Send</button>
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-outline-primary">Send</button>
+                        <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
                     </div>
                 </form>
             </div>
@@ -485,9 +475,9 @@
                                             <p class="about-text feature-text">and many more!</p>
                                             <div class="mb-5" style="text-align:center;">
                                                 <a href="https://youtu.be/PfYfdUHXg_M" target="_blank"><button
-                                                        class="button"><span style="font-size: 13px;">Tutorial</span></button></a>
+                                                        class="btn btn-outline-light"><span style="font-size: 13px;">Tutorial</span></button></a>
                                                 <a href="https://sonoransoftware.com/tutorials/sonorancad/database_sync.pdf"
-                                                    target="_blank"><button class="button"><span
+                                                    target="_blank"><button class="btn btn-outline-light"><span
                                                             style="font-size: 13px;">Documentation</span></button></a>
                                             </div>
 
@@ -538,9 +528,9 @@
                                     </p>
                                     <div style="text-align:center;">
                                         <a href="https://sonoransoftware.com/tutorials/sonorancad/SonoranCADIntegration.zip"
-                                            target="_blank"><button class="button"><span style="font-size: 13px;">Example</span></button></a>
+                                            target="_blank"><button class="btn btn-outline-light"><span style="font-size: 13px;">Example</span></button></a>
                                         <a href="https://sonoransoftware.com/tutorials/sonorancad/api.pdf"
-                                            target="_blank"><button class="button"><span
+                                            target="_blank"><button class="btn btn-outline-light"><span
                                                     style="font-size: 13px;">Documentation</span></button></a>
                                     </div>
                                 </div>
