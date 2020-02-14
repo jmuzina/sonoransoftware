@@ -364,6 +364,26 @@ nav-dark {
     margin-left: 5px;
 }
 
+.modal-body input, textarea{
+    background-color: #1e2225;
+    color: #f3f3f3;
+}
+
+.contact-form-label textarea{
+    background-color: #1e2225;
+    color: #f3f3f3;
+}
+
+.modal-body input:focus, textarea:focus{
+    background-color: #1e2225;
+    color: #f3f3f3;
+}
+
+.contact-form-label textarea:focus{
+    background-color: #1e2225;
+    color: #f3f3f3;
+}
+
 @media screen and (min-width: 375px) and (max-width: 385px) {
     .align-button {
         margin-left: 4px;
