@@ -50,7 +50,7 @@
                     </p>
                 </div>
                 <div class="row button-row mt-3">
-                    <button type="button" class="btn btn-outline-light product-button" onClick="document.getElementById('features').scrollIntoView();">Learn More</button>
+                    <button type="button" class="btn btn-outline-light product-button" onClick="document.getElementById('features').scrollIntoView({behavior: 'smooth', block: 'start'});">Learn More</button>
                     <button type="button" class="btn btn-outline-light product-button align-button" onClick="document.getElementById('register').scrollIntoView();" id = "features">Register Now</button>
                 </div>
                 
@@ -63,7 +63,7 @@
         <div class="container">
             <nav class="navbar nav-noborder navbar-dark navbar-expand-lg fixed-top change-nav">
                 <a class="navbar-brand logo" href="./../" style="margin-right:7%; margin-left:2%;">
-                    <img src="../assets/images/logos/logo_blue_white.png" alt="">
+                    <img src="../assets/images/logos/logo_blue_white.png" id="nav-logo" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -106,7 +106,7 @@
                     <div class="modal-header">
                     <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                        <span style="color: white;" aria-hidden="true">&times;</span>
                     </button>
                     </div>
                     <div class="modal-body secondary">
@@ -142,8 +142,8 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-outline-primary">Send</button>
-                        <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-outline-primary" style="width: 100px;">Send</button>
+                        <button type="button" class="btn btn-outline-danger" data-dismiss="modal" style="width: 100px;">Close</button>
                     </div>
                 </form>
             </div>
@@ -565,13 +565,13 @@
                                 <a href="https://sonorancad.com" style="padding:4px;"><img
                                         src="../assets/images/sonorancad/vtw.png" alt="View Website"
                                         class="info-button"></a>
-                                <a href="https://github.com/SonoranBrian/sc2_quasar/releases/latest/download/Sonoran-CAD-Setup-1.6.0.exe"
+                                <a href=" https://sonorancad.com/#/downloads"
                                     style="padding:4px;"><img src="../assets/images/sonorancad/dfw.png"
                                         alt="Windows Download" class="info-button"></a>
                                 <a href="https://sonorancad.com/#/downloads" style="padding:4px;"><img
                                         src="../assets/images/sonorancad/dfm.png" alt="MacOS Download"
                                         class="info-button"></a>
-                                <a href="https://sonorancad.com/#/downloads" style="padding:4px;"><img
+                                <a href="https://apps.apple.com/us/app/sonoran-cad/id1496539456" style="padding:4px;"><img
                                         src="../assets/images/sonorancad/dfi.png" alt="iOS Download"
                                         class="info-button"></a>
                                 <a href="https://play.google.com/store/apps/details?id=sonorancad.app"
@@ -626,19 +626,16 @@
             </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+            integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
             crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+            integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+            crossorigin="anonymous"></script>  
     <script src="../assets/javascript/script.js"></script>
     <script src="../assets/javascript/scroll.js"></script>
     <script src="../assets/javascript/aos.js"></script>
-   
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
-        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
-        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-        crossorigin="anonymous"></script>
     <script>AOS.init({ duration: "2000" });</script>
 </body>
 

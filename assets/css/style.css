@@ -311,6 +311,84 @@ nav-dark {
     justify-content: space-evenly;
 }
 
+
+.card {
+    background-image: 
+        linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)),
+        linear-gradient(90deg, rgba(52, 75, 107, 0), rgba(52, 75, 107, 1), rgba(52, 75, 107,0));
+    box-shadow: 4px 8px 7px 0 rgba(0, 0, 0, 0.4);
+    background-color: #3a3c3f;
+    background-repeat: no-repeat;
+    background-position: 0 0, 0 1px;
+    background-size: 100% 1px;
+    border-radius: 8px;
+    transition: all .15s linear !important;
+    height: 100%; 
+    box-shadow: rgba(52, 75, 107,0.7) 0 0 15px;
+}
+
+.card:hover {
+    filter: brightness(103%);
+    background-color: rgb(44, 48, 51);
+    box-shadow: rgba(68, 100, 142, 0.7) 0 0 15px;
+}
+
+.card-container h2, p {
+    color: #f3f3f3;
+}
+
+.card-container h2{
+    font-size: 1.7rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .card{
+        height: 97%;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    .card{
+        height: 700px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .card{
+        height: 570px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .card{
+        height: 580px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card{
+        height: 540px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .card{
+        height: 490px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .card{
+        height: 460px;
+    }
+}
+
+@media screen and (max-width: 335px) {
+    .card{
+        height: 420px;
+    }
+}
+
 .technology {
     width: 22%;
     border:none;
@@ -326,10 +404,13 @@ nav-dark {
     background-size: 100% 1px;
     border-radius: 8px;
     padding: 0.7%;
+
+    transition: all .2s linear !important;
 }
 
 .technology:hover {
-    background-color: rgb(63, 70, 75);
+    background-color: rgb(44, 48, 51);
+    box-shadow: rgba(68, 100, 142, 0.7) 0 0 15px;
  }
 
 .technology h2{
@@ -344,11 +425,24 @@ nav-dark {
     width: 60%;
 }
 
+@media screen and (max-width: 992px) {
+    .technology{
+        width: 45%;
+        margin-bottom: 2%;
+    }
+    .technology img{
+        width: 40%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .technology{
         width: 100%;
-        box-shadow: none;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         margin-bottom: 2%;
+    }
+    .card{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     }
     .technology img{
         width: 40%;
@@ -498,6 +592,15 @@ nav-dark {
     background-color: #46484b;
     color: #f3f3f3;
 }
+  
+.modal-body input::placeholder {
+    color: #c2c1c1;
+}
+
+.contact-form-label textarea::placeholder {
+    color: #c2c1c1;
+}
+
 
 @media screen and (min-width: 375px) and (max-width: 385px) {
     .align-button {
@@ -555,9 +658,16 @@ nav-dark {
     position: relative;
     height: 56.25vw;
     margin-bottom: -48px;
+    margin-top: -2.5vw;
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+    .main-cont{
+        height: 77.73462783171521vw;
+    }
 }
 
 .bg-image {
@@ -1801,13 +1911,14 @@ input[name="r"] {
     padding: 15px;
     font-size: 38px !important;
     font-weight: bold;
-    color: #f3f3f3;
-}
+    color: #000000;
+    text-shadow: 5px 5px 5px #928f8f; /* Section header shadow */
+ } 
 
 .team-text {
     text-align: center;
     padding-bottom: 15px;
-    color: #f3f3f3;
+    color: black;
 }
 
 .flexmebox {
@@ -1820,68 +1931,6 @@ input[name="r"] {
     width: 33.3%;
     margin-bottom: 16px;
     padding: 0 8px;
-}
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    height: 480px;
-    background-color: #3a3c3f;
-}
-
-.card-container h2, p {
-    color: #f3f3f3;
-}
-
-.card-container h2{
-    font-size: 1.7rem;
-}
-
-@media screen and (max-width: 1200px) {
-    .card{
-        height: 97%;
-    }
-}
-
-@media screen and (max-width: 775px) {
-    .card{
-        height: 700px;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .card{
-        height: 570px;
-    }
-}
-
-@media screen and (max-width: 575px) {
-    .card{
-        height: 580px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .card{
-        height: 540px;
-    }
-}
-
-@media screen and (max-width: 440px) {
-    .card{
-        height: 490px;
-    }
-}
-
-@media screen and (max-width: 380px) {
-    .card{
-        height: 460px;
-    }
-}
-
-@media screen and (max-width: 335px) {
-    .card{
-        height: 420px;
-    }
 }
 
 .card-container {
@@ -2227,6 +2276,10 @@ li.right-it {
 
 .secondary {
     background-color: #3b4046;
+}
+
+.tertiary {
+    background-color: #bcbdbf;
 }
 
 .product-feature h1 {

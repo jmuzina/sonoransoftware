@@ -11,6 +11,23 @@ function video_replace() {
     }
 };
 
+function assets_dir() {
+    if (fileName == "" || fileName == "about") {
+        return "assets/";
+    }
+    else if (fileName == "brian" || fileName == "zack" || fileName == "thomas" || fileName == "joe" || fileName == "sonorancad") {
+        return "../assets/";
+    }
+}
+
+function hide_logo(tag) {
+    $("#nav-logo").fadeOut();
+}
+
+function add_logo(tag) {
+    $("#nav-logo").fadeIn();
+}
+
 window.addEventListener('scroll', function(e) {
     last_known_scroll_position = window.scrollY;
     if (fileName == "") {
@@ -30,22 +47,29 @@ window.addEventListener('scroll', function(e) {
     else if (fileName == "sonorancad") {
         base_class = ".change-nav";
     }
+
     if ((last_known_scroll_position > scroll_limit) && (!$(base_class).hasClass("scrolled"))) {
         $(base_class).addClass("scrolled");
+        if ($(window).width() <= 768) {
+            add_logo(".navbar-brand");
+        }
     } else if ((last_known_scroll_position <= scroll_limit) && ($(base_class).hasClass("scrolled"))) {
         $(base_class).removeClass("scrolled");
+        if ($(window).width() <= 768) {
+            hide_logo(".navbar-brand");
+        }
     }
 });
 
 $("video").ready(function () {
     if (($(window).width() < 768) && (fileName == "about" || fileName == "")) {
         video_replace();
-        $(".navbar-brand").replaceWith("<a class='navbar-brand logo' href='./' style='margin-right:7%; margin-left:2%;'></a>");
+        hide_logo(".navbar-brand");
     }
 });
 
 $(window).resize(function() {
-    if ($(window).width() < 768) { // viewing on a phone
+    if ($(window).width() < 769) { // viewing on a phone
         video_replace();
         if (fileName == "" || filename == "sonorancad") {
             $(".navbar-brand").replaceWith("<a class='navbar-brand logo' href='./' style='margin-right:7%; margin-left:2%;'></a>");

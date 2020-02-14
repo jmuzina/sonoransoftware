@@ -26,7 +26,7 @@
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-dark fixed-top change-nav-main" style="border-bottom: 0;">
                     <a class="navbar-brand logo" href="./" style="margin-right:7%; margin-left:2%;">
-                        <img src="./assets/images/logos/logo_blue_white.png" alt=""> 
+                        <img src="./assets/images/logos/logo_blue_white.png" id="nav-logo" alt=""> 
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
@@ -61,7 +61,7 @@
                         <div class="modal-header">
                         <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
+                            <span style="color: white;" aria-hidden="true">&times;</span>
                         </button>
                         </div>
                         <div class="modal-body secondary">
@@ -97,19 +97,19 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="submit" class="btn btn-outline-primary">Send</button>
-                            <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-outline-primary" style="width: 100px;">Send</button>
+                            <button type="button" class="btn btn-outline-danger" data-dismiss="modal" style="width: 100px;">Close</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
         <div class="container-fluid main-cont" id = "vid-container" style="padding-left:0; padding-right:0;">
-            <div id = "video">
+            <section id = "video">
                 <video id = "main" autoplay muted class="main-video" style="margin-top:-49px;">
                     <source src="assets/videos/logo_intro_cut.mp4" type="video/mp4">
                 </video>
-            </div>
+            </section>
             <div class="centered-buttons">
                 <div class="product-header-dark">
                     <!--text can go here-->
@@ -124,7 +124,7 @@
                         </p>
                     </div>
                     <div class="row fade-button-row mt-3" id="button-fade" style="display:none;">
-                        <button type="button" class="btn btn-outline-light product-button" id="b1" onClick="document.getElementById('technologies').scrollIntoView();">Our Technology</button>
+                        <button type="button" class="btn btn-outline-light product-button" id="b1" onClick="document.getElementById('technologies').scrollIntoView({behavior: 'smooth', block: 'start'});">Our Technology</button>
                         <a href="products/sonorancad"><button class="btn btn-outline-light product-button fade-align-button"><span>Products</span></button></a>
                     </div>
                 </div>
@@ -146,7 +146,7 @@
                             <div class="technology" data-aos="fade" data-aos-anchor-placement="top-bottom">
                                 <h2>.Net Core</h2>
                                 <img src="assets/images/home/dotnet_core.png" alt="">
-                                <p class="about-text mt-3">
+                                <p class="about-text">
                                     Our backend API servers rely on the latest open-source, cross-platform, .Net Core framework from Microsoft.
                                 </p>
                                 <p class="about-text">
@@ -165,7 +165,7 @@
                             </div>
                             <div class="technology" data-aos="fade" data-aos-anchor-placement="top-bottom">
                                 <h2>Vue JS</h2>
-                                <img src="assets/images/home/vue_js.png" class="mt-2" alt="">
+                                <img src="assets/images/home/vue_js.png" alt="">
                                 <p class="about-text">
                                     Vue JS is a performance based reusable UI component framework.
                                 </p>
@@ -175,8 +175,8 @@
                             </div>
                             <div class="technology" data-aos="fade" data-aos-anchor-placement="top-bottom">
                                 <h2>Quasar</h2>
-                                <img src="assets/images/home/quasar.png" class="mt-3" alt="">
-                                <p class="about-text mt-2">
+                                <img src="assets/images/home/quasar.png" alt="">
+                                <p class="about-text">
                                     The Quasar framework allows for rapid, cross-platform deployments to all major devices.
                                 </p>
                                 <p class="about-text">
