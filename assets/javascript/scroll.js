@@ -7,7 +7,7 @@ function video_replace() {
         $("video.spotlight-video").replaceWith("<img class='spotlight-mobile-image' src='assets/images/sonorancad/video-still.png'></img>");
     }
     else if (fileName == "sonorancad") {
-        $("video").replaceWith("<img class='bg-mobile-image' src='../assets/images/sonorancad/video-still.png'></img>");
+        $("video").replaceWith("<img class='bg-mobile-image' id='sonoran_video' src='../assets/images/sonorancad/video-still.png'></img>");
     }
 };
 
