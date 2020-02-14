@@ -2071,6 +2071,31 @@ li.right-it {
     cursor: pointer;
 }
 
+.team-carousel{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-self: center;
+    width: 65%;
+}
+
+@media screen and (max-width: 768px) {
+    .team-carousel{
+        width: 95%;
+    }
+}
+
+.team-carousel img{
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.team-text{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
 .company-info-button:hover {
     background-color: #0071ce;
 }

@@ -13,7 +13,7 @@ function video_replace() {
 
 window.addEventListener('scroll', function(e) {
     last_known_scroll_position = window.scrollY;
-    let scroll_limit = $(window).height() * 0.75;
+    let scroll_limit = $(window).height() * 0.45;
     var base_class;
     if (fileName == "") {
         base_class = ".change-nav-main";
