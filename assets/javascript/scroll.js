@@ -1,13 +1,12 @@
 var fileName = location.href.split("/").slice(-1); 
 
 function video_replace() {
-    if ($(window).width() < 768) { // viewing on a phone
-        if (fileName == "") {
-            $("video").replaceWith("<img class='main-mobile-image' src='assets/images/main_mobile.png'></img>");
-        }
-        else if (fileName == "sonorancad") {
-            $("video").replaceWith("<img class='bg-mobile-image' src='../assets/images/sonorancad/video-still.png'></img>");
-        }
+    if (fileName == "") {
+        $("video.main-video").replaceWith("<img class='main-mobile-image' src='assets/images/main_mobile.png'></img>");
+        $("video.spotlight-video").replaceWith("<img class='spotlight-mobile-image' src='assets/images/sonorancad/video-still.png'></img>");
+    }
+    else if (fileName == "sonorancad") {
+        $("video").replaceWith("<img class='bg-mobile-image' src='../assets/images/sonorancad/video-still.png'></img>");
     }
 };
 

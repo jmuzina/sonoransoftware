@@ -435,6 +435,15 @@ nav-dark {
     background-repeat: no-repeat;
     background-size: cover;
   }
+  
+  .gap-hide{
+    width: 104.6%;
+    height: 25px;
+    background-color: #343a40;
+    margin-top: -19px;
+    margin-left: -13px;
+    position: absolute;
+  }
 
   .main-video{
     margin-bottom: -8px;
@@ -449,6 +458,18 @@ nav-dark {
     object-fit: fill;
     object-position: 50% 0;
     max-width: 100vw;
+  }
+  .spotlight-video{
+    width: 100%;
+    box-shadow: 0 0 10px black;
+    object-position: 0px -14px;
+
+  }
+  .spotlight-mobile-image{
+    object-position: 50% 0;
+    object-fit: fill;
+    object-position: 50% 0;
+    width: 100%;
   }
 
   .bg-video {
