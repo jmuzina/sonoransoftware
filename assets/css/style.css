@@ -555,6 +555,7 @@ nav-dark {
     position: relative;
     height: 56.25vw;
     margin-bottom: -48px;
+    margin-top: -2.5vw;
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-end;
