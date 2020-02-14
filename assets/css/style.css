@@ -592,6 +592,15 @@ nav-dark {
     background-color: #46484b;
     color: #f3f3f3;
 }
+  
+.modal-body input::placeholder {
+    color: #c2c1c1;
+}
+
+.contact-form-label textarea::placeholder {
+    color: #c2c1c1;
+}
+
 
 @media screen and (min-width: 375px) and (max-width: 385px) {
     .align-button {
@@ -1902,13 +1911,14 @@ input[name="r"] {
     padding: 15px;
     font-size: 38px !important;
     font-weight: bold;
-    color: #f3f3f3;
-}
+    color: #000000;
+    text-shadow: 5px 5px 5px #928f8f; /* Section header shadow */
+ } 
 
 .team-text {
     text-align: center;
     padding-bottom: 15px;
-    color: #f3f3f3;
+    color: black;
 }
 
 .flexmebox {
@@ -2266,6 +2276,10 @@ li.right-it {
 
 .secondary {
     background-color: #3b4046;
+}
+
+.tertiary {
+    background-color: #bcbdbf;
 }
 
 .product-feature h1 {
