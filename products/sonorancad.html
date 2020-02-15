@@ -50,8 +50,11 @@
                     </p>
                 </div>
                 <div class="row button-row mt-3">
-                    <button type="button" class="btn btn-outline-light product-button" onClick="document.getElementById('features').scrollIntoView({behavior: 'smooth', block: 'start'});">Learn More</button>
-                    <button type="button" class="btn btn-outline-light product-button align-button" onClick="document.getElementById('register').scrollIntoView();" id = "features">Register Now</button>
+                    <button type="button" class="btn btn-outline-light product-button" onClick="document.getElementById('features').scrollIntoView({behavior: 'smooth', block: 'start'}); setTimeout(() => 
+                        {
+                            window.scrollBy(0,-50);
+                        }, 500);">Learn More</button>
+                    <button type="button" class="btn btn-outline-light product-button align-button" onClick="document.getElementById('register').scrollIntoView({behavior: 'smooth', block: 'center'});">Register Now</button>
                 </div>
                 
             </div>
@@ -151,7 +154,7 @@
     </div>
     <div class="main">
         <div class="container-fluid" style="background-color: #343a40; padding-left: 0; padding-right: 0;">
-            <div class="container-fluid">
+            <div class="container-fluid" id="features">
                 <div class="row" style="flex-flow: column nowrap;">
                     <div data-aos="fade" data-aos-anchor-placement="top-bottom">
                         <h1 class="top-category feature-header feature-category" style="text-align:center;">
@@ -542,7 +545,7 @@
         </div>
         <div style="padding-top:12px; padding-bottom: 14px; background-color: #272a2e;">
             <div class="container" data-aos="fade" data-aos-anchor-placement="top-bottom">
-                <div class="row" id="register">
+                <div class="row">
                     <div class="col-md-6">
                         <div class="products">
                             <div>
@@ -553,7 +556,7 @@
                     </div>
                     <div class="col-md-6 product-download-col">
                         <div style="align-self:center;">
-                            <p class="about-headings"
+                            <p class="about-headings" id="register"
                                 style="text-align:center; margin-bottom: 0; padding-top:8px; font-weight:bold; color: #0071ce;">
                                 Interested?
                             </p>
