@@ -410,10 +410,14 @@ nav-dark {
     border-radius: 8px;
     padding-top: 0.7%;
     padding-bottom: 0.7%;
-    padding-left: 1.4%;
-    padding-right: 1.4%;
+    padding-left: 1.8%;
+    padding-right: 1.8%;
 
     transition: all .2s linear !important;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
 }
 
 .technology:hover {
@@ -427,10 +431,16 @@ nav-dark {
     margin: 5px;
     color: #f3f3f3;
     text-shadow: 5px 5px 5px black;
+    align-self: center;
 }
 
 .technology img{
     width: 60%;
+    align-self: center;
+}
+
+.technology p{
+    align-self: center;
 }
 
 @media screen and (max-width: 992px) {
@@ -448,6 +458,8 @@ nav-dark {
         width: 100%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         margin-bottom: 2%;
+        padding-left: 2.7%;
+        padding-right: 2.7%;
     }
     .card{
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -1993,6 +2005,7 @@ input[name="r"] {
 
 .card-image {
     width: 100%;
+    border-radius: 8px 8px 0 0;
 }
 
 .card-icons {

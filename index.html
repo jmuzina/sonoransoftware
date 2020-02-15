@@ -128,7 +128,7 @@
                         <button type="button" class="btn btn-outline-light product-button fade-align-button" id="b1" onClick=
                             "document.getElementById('technologies').scrollIntoView({behavior: 'smooth', block: 'start'}); setTimeout(() => 
                             {
-                                window.scrollBy(0,-70);
+                                window.scrollBy(0,-20);
                             }, 500);"
                         >Our Technology</button>
                         <a href="products/sonorancad"><button class="btn btn-outline-light product-button fade-align-button"><span>Products</span></button></a>
@@ -136,8 +136,8 @@
                 </div>
             </div>
         </div>
-        <div class="main mt-5" id = "technologies" style = "background-color: #343a40;">
-            <div class = "container-fluid">
+        <div class="main mt-5" style = "background-color: #343a40;" data-aos="fade" data-aos-anchor-placement="top-bottom">
+            <div class = "container-fluid" id = "technologies">
                 <div class="row">   
                     <div class="company-info-text-2", style = "padding-top: 2%;">
                         <div>
@@ -148,7 +148,7 @@
                                 To ensure an exceptional user experience, Sonoran Software Systems relies upon the industry’s latest technology frameworks. Take a look at some of the tools utilized in our technology stack.
                             </p>
                         </div>
-                        <div class="technologies-grid mt-4 mb-2" data-aos="fade" data-aos-anchor-placement="top-bottom">
+                        <div class="technologies-grid mt-4 mb-2">
                             <div class="technology">
                                 <h2>.Net Core</h2>
                                 <img src="assets/images/home/dotnet_core.png" alt="">
@@ -194,7 +194,7 @@
                 </div>
             </div>
             <div class="container-fluid secondary">
-                <div class="row company-info-text-2 mt-4" data-aos="fade" data-aos-anchor-placement="top-bottom">
+                <div class="row company-info-text-2 mt-4">
                     <div class="col-md-6 team-text">
                         <p class="about-headings">
                             Our Team
@@ -237,14 +237,14 @@
                 </div>
             </div>
             <div class="container-fluid">
-                <div class="row project-spotlight mt-3" data-aos="fade" data-aos-anchor-placement="top-bottom">
+                <div class="row project-spotlight mt-3">
                     <p class="about-headings" style="align-self: center; padding: 10px 0px 10px 0px">
                         Product Spotlight
                     </p>
                     <div class="container">
                         <div class="row spotlight-row">
                             <div class="col-md-7 project-image">
-                                <div data-aos="fade-right" data-aos-anchor-placement="top-bottom">
+                                <div>
                                     <video id="spotlight" autoplay muted loop class="spotlight-video">
                                         <source src="assets/videos/sonorancad/background.mp4" type="video/mp4">
                                     </video>

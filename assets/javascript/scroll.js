@@ -41,7 +41,7 @@ function scroll_nav(width) {
             scroll_limit = $("#vid-container").height() - 120;
         }
         else if (fileName == "sonorancad") {
-            scroll_limit = $("#sonoran_video").height() - 120;
+            scroll_limit = $("#sonoran_video").height() - 130;
         }
         else {
             scroll_limit = $(window).height()*.5;
