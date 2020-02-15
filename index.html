@@ -26,7 +26,7 @@
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-dark fixed-top change-nav-main" style="border-bottom: 0;">
                     <a class="navbar-brand logo" href="./" style="margin-right:7%; margin-left:2%;">
-                        <img src="./assets/images/logos/logo_blue_white.png" id="nav-logo" alt=""> 
+                        <img src="./assets/images/logos/logo_blue_white.png" id="nav-logo" alt="" style="display:none;"> 
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
@@ -124,7 +124,13 @@
                         </p>
                     </div>
                     <div class="row fade-button-row mt-3" id="button-fade" style="display:none;">
-                        <button type="button" class="btn btn-outline-light product-button" id="b1" onClick="document.getElementById('technologies').scrollIntoView({behavior: 'smooth', block: 'start'});">Our Technology</button>
+                        <a href="about"><button class="btn btn-outline-light product-button"><span>About</span></button></a>
+                        <button type="button" class="btn btn-outline-light product-button fade-align-button" id="b1" onClick=
+                            "document.getElementById('technologies').scrollIntoView({behavior: 'smooth', block: 'start'}); setTimeout(() => 
+                            {
+                                window.scrollBy(0,-70);
+                            }, 500);"
+                        >Our Technology</button>
                         <a href="products/sonorancad"><button class="btn btn-outline-light product-button fade-align-button"><span>Products</span></button></a>
                     </div>
                 </div>
@@ -142,8 +148,8 @@
                                 To ensure an exceptional user experience, Sonoran Software Systems relies upon the industry’s latest technology frameworks. Take a look at some of the tools utilized in our technology stack.
                             </p>
                         </div>
-                        <div class="technologies-grid mt-4 mb-2">
-                            <div class="technology" data-aos="fade" data-aos-anchor-placement="top-bottom">
+                        <div class="technologies-grid mt-4 mb-2" data-aos="fade" data-aos-anchor-placement="top-bottom">
+                            <div class="technology">
                                 <h2>.Net Core</h2>
                                 <img src="assets/images/home/dotnet_core.png" alt="">
                                 <p class="about-text">
@@ -153,7 +159,7 @@
                                     With .Net Core, we can easily scale and replicate nodes across the world to meet consumer demands.
                                 </p>
                             </div>
-                            <div class="technology" data-aos="fade" data-aos-anchor-placement="top-bottom">
+                            <div class="technology">
                                 <h2>SignalR</h2>
                                 <img src="assets/images/home/signalr.png" alt="">
                                 <p class="about-text">
@@ -163,7 +169,7 @@
                                     This open-source, open-protocol communication framework ensures proper authentication and scalability for an exceptional user experience.
                                 </p>
                             </div>
-                            <div class="technology" data-aos="fade" data-aos-anchor-placement="top-bottom">
+                            <div class="technology">
                                 <h2>Vue JS</h2>
                                 <img src="assets/images/home/vue_js.png" alt="">
                                 <p class="about-text">
@@ -173,7 +179,7 @@
                                     Sonoran Software Systems specializes in building fully responsive UI components that look great on any platform.
                                 </p>
                             </div>
-                            <div class="technology" data-aos="fade" data-aos-anchor-placement="top-bottom">
+                            <div class="technology">
                                 <h2>Quasar</h2>
                                 <img src="assets/images/home/quasar.png" alt="">
                                 <p class="about-text">
