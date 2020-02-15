@@ -2,6 +2,10 @@ $(document).ready(function () {
     var old_width = $(window).width();
     var fileName = location.href.split("/").slice(-1); 
 
+    if (old_width <= 768) {
+        hide_logo(".nav-brand");
+    }
+
     // Replaces all videos with their static screenshot equivalents
     function video_replace() {
         console.log("video_replace()");
@@ -27,10 +31,12 @@ $(document).ready(function () {
     }
 
     function hide_logo(tag) {
+        console.log("[DEBUG] Hiding logo");
         $("#nav-logo").fadeOut();
     }
 
     function add_logo(tag) {
+        console.log("[DEBUG] Adding logo");
         $("#nav-logo").fadeIn();
     }
 
@@ -57,11 +63,13 @@ $(document).ready(function () {
         if ((last_known_scroll_position > scroll_limit) && (!$(base_class).hasClass("scrolled"))) {
             $(base_class).addClass("scrolled");
             if ($(window).width() <= 768) {
+                console.log("adding from scroll listener");
                 add_logo(".navbar-brand");
             }
         } else if ((last_known_scroll_position <= scroll_limit) && ($(base_class).hasClass("scrolled"))) {
             $(base_class).removeClass("scrolled");
             if ($(window).width() <= 768) {
+                console.log("hiding from scroll listener");
                 hide_logo(".navbar-brand");
             }
         }
@@ -77,25 +85,31 @@ $(document).ready(function () {
     // Handle changing of video/static image on window resizing
     $(window).resize(function() {
         var new_width = $(window).width();
-        console.log(old_width + ", " + new_width);
+        //console.log(old_width + ", " + new_width);
 
-        if (new_width <= 768) {
+        if (new_width <= 768 && old_width > 769) {
             // Replace video with static image only if resized to mobile size
             if (Math.abs(new_width - old_width) < 2) {
                 video_replace();
                 $("#button-fade").fadeOut();
             }
+            /*
             if (fileName == "" || filename == "sonorancad") {
+                console.log("hiding from window.resize()");
                 hide_logo(".navbar-brand");
             }
+            */
         }
         else if (fileName == "" || filename == "sonorancad") {
             // Replace static image with video only if resized to tablet+ size
-            if (Math.abs(new_width - old_width) < 2) {
+            if (Math.abs(new_width - old_width) < 2 && new_width > 769) {
                 static_replace();
                 $("#button-fade").replaceWith("<div class='row fade-button-row mt-3' id='button-fade' style='display:none;'><a href='about'><button class='btn btn-outline-light product-button'><span>About</span></button></a><button type='button' class='btn btn-outline-light product-button fade-align-button' id='b1' onClick='document.getElementById('technologies').scrollIntoView({behavior: 'smooth', block: 'start'}); setTimeout(() => {window.scrollBy(0,-70);}, 500);'>Our Technology</button><a href='products/sonorancad'><button class='btn btn-outline-light product-button fade-align-button'><span>Products</span></button></a></div>")
             }
+            /*
+            console.log("adding from window.resize()");
             add_logo(".navbar-brand");
+            */
         }
         old_width = new_width;
     });
