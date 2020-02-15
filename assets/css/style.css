@@ -482,6 +482,10 @@ nav-dark {
     bottom: 21%;
 }
 
+.main {
+    width: 100vw;
+}
+
 @media screen and (max-width: 1080px) {
     .centered-buttons{
         bottom: 20%;
