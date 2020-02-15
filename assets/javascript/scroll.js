@@ -1,5 +1,7 @@
 var fileName = location.href.split("/").slice(-1); 
 
+history.scrollRestoration = "manual"; // Send user to top of page on refresh
+
 // Replaces all videos with their static screenshot equivalents
 function video_replace() {
     if (fileName == "") {
@@ -101,7 +103,6 @@ $(document).ready(function () {
         else if ((new_width > 768 && old_width <= 768)) {
             static_replace();
             setTimeout(function() {$("#button-fade").fadeIn()}, 7300);
-            console.log($(window).scrollTop(), $("#vid-container").height() - 120);
             if ($(window).scrollTop() < $("#vid-container").height() - 120) {
                 add_logo(".navbar-brand");
             }
