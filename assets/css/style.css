@@ -395,7 +395,7 @@ nav-dark {
 }
 
 .technology {
-    width: 22%;
+    width: 24%;
     border:none;
     background-color: #262b30;
     background-image: 
@@ -414,10 +414,6 @@ nav-dark {
     padding-right: 1.8%;
 
     transition: all .2s linear !important;
-
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-evenly;
 }
 
 .technology:hover {
