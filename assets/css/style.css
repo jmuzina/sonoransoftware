@@ -285,6 +285,15 @@ nav-dark {
     height: auto ;
 }
 
+.team-container {
+    background-color: #969696;
+    padding-top: 1.1%;
+    padding-left: 0.8%;
+    padding-right: 0.8%;
+    border-radius: 12px;
+    box-shadow: rgba(14, 21, 32, 0.7) 0 0 15px;
+}
+
 .team-cards {
     display: flex;
     flex-flow: row wrap;
