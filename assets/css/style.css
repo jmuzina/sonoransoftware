@@ -722,6 +722,12 @@ nav-dark {
     position: absolute;
   }
 
+  @media screen and (max-width: 768px) {
+      .gap-hide {
+          width: 98%;
+      }
+  }
+
   .main-video{
     margin-bottom: -8px;
     object-fit: cover;
